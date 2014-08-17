@@ -1,1 +1,7 @@
-# Rails Girls Introduction
+# Rails Girls Workshop
+
+
+
+
+
+> **Info**
