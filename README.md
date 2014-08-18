@@ -4,7 +4,7 @@
 
 We are very excited to share with you how to build a web application using Ruby on Rails.
 
-We love building websites because we get to be creative, solve problems, and make things.  We hope to share this joy with you today!
+We love building websites because we get to be creative, solve problems, and make things.  We hope you experience the joy of creating today!
 
 Each of us began our journeys to becoming web developers differently, but we find that a common thread is curiosity and a thirst for learning.
 

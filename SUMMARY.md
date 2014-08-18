@@ -21,6 +21,7 @@
    * [Looking at the code](a_look_behind_your_favorite_sites/looking_at_the_code.md)
 * [Expand and explore](explore/README.md)
    * [Adding log in for users](explore/adding_log_in_for_users.md)
+   * [What is Git or version control?](explore/what_is_git.md)
    * [Getting a Github account to share your code](explore/getting_a_github_account_to_share_your_code.md)
    * [Beautifying your page with Bootstrap](explore/beautifying_your_page_with_bootstrap.md)
 * [Appendix](appendix/README.md)
