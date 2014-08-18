@@ -1,1 +1,1 @@
-# Sending Letters
+# Sending Letters analogy
