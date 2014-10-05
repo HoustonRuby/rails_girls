@@ -13,6 +13,7 @@
        * [All](messages/all.md)
        * [All from one author](file_name_should_be_unique.md)
        * [Just one](messages/just_one.md)
+   * [Review: What did we do?](messages/review_what_did_we_do.md)
 * [But, what if we want users?](users/README.md)
    * [Adding a user](users/add.md)
    * [Assign users to messages](users/assign_users_to_messages.md)
