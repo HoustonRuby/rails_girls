@@ -2,12 +2,12 @@
 
 * [Welcome to Rails Girls!](README.md)
 * [How does a website work?](how_the_internet_works/README.md)
+* [Getting Started](building_your_first_rails_app/getting_started.md)
 * [Installation](installation/README.md)
    * [Windows](installation/windows.md)
    * [Mac](installation/mac.md)
    * [Niterous.io](installation/niterousio.md)
    * [Text Editor](installation/text_editor.md)
-* [Getting Started](building_your_first_rails_app/getting_started.md)
 * [Starting a new Rails app](building_your_first_rails_app/starting_a_new_rails_app.md)
 * [What is Ruby?](introduction_to_ruby/README.md)
 * [What is Rails?](what_is_rails/README.md)

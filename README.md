@@ -1,7 +1,5 @@
 # Welcome to Rails Girls!
 
-> **Info**
-
 We are very excited to share with you how to build a web application using Ruby on Rails.
 
 We love building websites because we get to be creative, solve problems, and make things.  We hope you experience the joy of creating today!
