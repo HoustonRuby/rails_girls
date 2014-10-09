@@ -10,9 +10,24 @@
 
 This little window can seem intimitating, but with practice, you will get the hang of it and feel its power =).
 
+Let's try a couple things to get started:
+
 *Mac*
 
+![](../images/terminal_mac.png)
+
+
 *Windows*
+
+
+
+```bash
+$ cd ~
+$ mkdir web-projects
+$ cd web-projects
+```
+
+> What did we just do?  Let's discuss with your coach.
 
 
 ## Rails

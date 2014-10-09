@@ -1,13 +1,14 @@
 # Getting Started
 
-Notice all the custom T-Shirt websites online? There are about 5 billion of them. So that is why we are going to create our own custom T-Shirt website. This sounds like a terific business opportunity. Let's call our site TEErific.
+Let's start by telling Rails to make our first application.  Since we are making a Twitter clone, let's call our application chirper.
 
 ## Creating your Rails Applications
 
-At the command prompt, we need to type the command.
-~~~
-$ rails new teerific
-~~~
+At the command prompt, we need to type the command:
+
+```bash
+$ rails new chirper
+```
 
 The command will generate all the files and folders you need for a Rails application. We will learn more about what the files do as we build our site.
 
@@ -19,7 +20,7 @@ First we will click on File and then select Open.
 
 ![](../images/sublime_open.png)
 
-Next, we will find the folder we just created with `rails new teerific`.
+Next, we will find the folder we just created with `rails new chirper`.
 
 ![](../images/open_window.png)
 
@@ -32,7 +33,7 @@ After we open the folder, we can see our Rails project structure in Sublime's pr
 Time to start our Rails Application. Basically a quick test to see if we did everything right. :)
 
 ~~~
-$ cd teerific
+$ cd chirper
 $ rails server
 ~~~
 
@@ -51,3 +52,7 @@ INFO  WEBrick::HTTPServer#start: pid=91441 port=3000
 If you go to a web browser like Chrome, you can view your website at `http://localhost:3000`
 
 ![](../images/rails_new_site.png)
+
+## You've started a brand new rails project!
+
+Let's update this front page and make it our own!
