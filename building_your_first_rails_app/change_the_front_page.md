@@ -1,6 +1,6 @@
 # Change the front page
 
-Let's tell Rails to make an index page at our home for us.  Before we can tell it something new, we have to tell it to stop running the server by pressing `Ctrl + c`.
+Let's tell Rails to make an index page at our home for us.  Before we can tell the commandline to do something new, we have to tell it quit what it's currently doing (running the server) by pressing `Ctrl + c`.
 
 Then, we can tell it to make something:
 
@@ -8,7 +8,7 @@ Then, we can tell it to make something:
 $ rails generate controller home index
 ```
 
-Sometimes, Rails will help you if you did something that doesn't work quite yet.  In this case, you may see something like this:
+Sometimes, Rails will help us if we did something that doesn't work quite yet.  In this case, we may see something like this:
 
 ![](../images/terminal_bundle_install.png)
 
@@ -23,9 +23,14 @@ Then, the commandline will say something like:
 ![](../images/terminal_fetching_gems.png)
 
 
-This means it is looking up for some packages called `gems` to download to your `chirper` folder so that you can use them!
+This means it is looking up for some packages called `gems` to download to our `chirper` folder so that we can use them! This might take awhile.
 
-When it's done, you'll see the `$ ` again.  If we press the up arrow, it will show us the last command we ran.  If we press up again, we should see:
+> Ask your coach what `gems` are while you're waiting.
+
+
+## Make the page
+
+When it's done, we'll see the `$ ` again.  If we press the up arrow, it will show us the last command we ran.  If we press up again, we should see:
 
 ```bash
 $ rails generate controller home index
@@ -33,7 +38,7 @@ $ rails generate controller home index
 
 This time, Rails should know how do make the "`controller`".
 
-You should see something like this:
+We should see something like this:
 
 ![](../images/terminal_controller.png)
 
@@ -56,10 +61,9 @@ You should see something like this:
 <!--      create      app/assets/stylesheets/home.css.scss-->
 <!--```-->
 
-This means that Rails made some files for us!  Let's have a look in Sublime Text. If you open `app/controllers/home_controller.rb`, you should see:
+This means that Rails made some files for us!  Let's have a look in Sublime Text. If we open `app/controllers/home_controller.rb`, we should see:
 
 ![](../images/home_controller.png)
-
 
 Great!  Let's refresh our page in Chrome.
 
@@ -72,15 +76,16 @@ Now do:
 ```bash
 $ rails server
 ```
-Now if you switch back to your first tab by clicking on it, you can run commands in this first tab while the server is still running.
+Now if we switch back to our first tab by clicking on it, we can run commands in this first tab while the server is still running.
 
 Let's look at our page in Chrome again. It doesn't look like anything has changed from before.  That's because Rails doesn't know to point the index page to the new one we made.
 
-In Sublime Text, go to `config/routes.rb`.  You should see something like this:
+In Sublime Text, go to `config/routes.rb`.  We should see something like this:
 
 ![](../images/initial_routes.png)
 
-After where it says
+
+After this following line:
 
 ```ruby
     get 'home/index'
@@ -94,15 +99,27 @@ type:
 
 This will tell Rails to point the "`root`" of the site to the page we told Rails to make.
 
-Now, if we go to Chrome, we should see something like:
+Now, if we go to Chrome and refresh, we should see something like:
 
 ![](../images/chrome_home-index.png)
+
+Note that if we go to http://localhost:3000/home/index, we will see the same thing:
+
+![](../images/chrome_home-index_at_route.png)
+
+That is what the line:
+```ruby
+    get 'home/index'
+```
+helps define.
+
+## Edit the page
 
 Let's go find the file in `app/views/home/index.html.erb` like the page says!
 
 ![](../images/sublime_index_erb.png)
 
-That looks a lot like what's in the browser!  This is `html` with a touch of something called `erb`.  You can see that in the extension of the file, `.html.erb`.
+That looks a lot like what's in the browser!  This is `html` with a touch of something called `erb`.  We can see that in the extension of the file, `.html.erb`.
 
 > Ask your coach about `html` and `erb`.
 
@@ -115,7 +132,7 @@ For now, this is what I will do.
 <p>This is Chirper, a fun way to post short messages on the web!</p>
 ```
 
-My page now looks like this:
+My page at http://localhost:3000/ now looks like this:
 
 ![](../images/chrome_home-index_editted.png)
 

@@ -6,6 +6,8 @@
 >
 > * The commandline
 >
+>   * The up arrow trick
+>
 > * Sublime Text
 >
 > * `controller`
