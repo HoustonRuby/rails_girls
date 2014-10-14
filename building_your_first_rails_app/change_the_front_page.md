@@ -36,30 +36,11 @@ When it's done, we'll see the `$ ` again.  If we press the up arrow, it will sho
 $ rails generate controller home index
 ```
 
-This time, Rails should know how do make the "`controller`".
+This time, Rails should know how to make the "`controller`".
 
 We should see something like this:
 
 ![](../images/terminal_controller.png)
-
-<!--may need to edit out git init -->
-<!--```bash-->
-<!--      create  app/controllers/home_controller.rb-->
-<!--       route  get 'home/index'-->
-<!--      invoke  erb-->
-<!--      create    app/views/home-->
-<!--      create    app/views/home/index.html.erb-->
-<!--      invoke  test_unit-->
-<!--      create    test/controllers/home_controller_test.rb-->
-<!--      invoke  helper-->
-<!--      create    app/helpers/home_helper.rb-->
-<!--      invoke    test_unit-->
-<!--      invoke  assets-->
-<!--      invoke    coffee-->
-<!--      create      app/assets/javascripts/home.js.coffee-->
-<!--      invoke    scss-->
-<!--      create      app/assets/stylesheets/home.css.scss-->
-<!--```-->
 
 This means that Rails made some files for us!  Let's have a look in Sublime Text. If we open `app/controllers/home_controller.rb`, we should see:
 
@@ -136,3 +117,5 @@ My page at http://localhost:3000/ now looks like this:
 
 ![](../images/chrome_home-index_editted.png)
 
+
+<!--For fun, let's see if we can tell a new route [http://localhost:3000/nest](http://localhost:3000/nest) to that same page.-->
