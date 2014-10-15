@@ -18,6 +18,11 @@ The base app is a single model CRUD app called Chirper that is an imitation of T
 Section 6/What else can we do is where all the fun stuff is (like making things easier on the eyes with Bootstrap).
 
 
+## Section 6 guides that need lots of love
+
+are here [exploration issues](https://github.com/HoustonRuby/rails_girls/issues?q=is%3Aopen+is%3Aissue+label%3Aexploration).
+
+
 ## To contribute,
 
 * Download [Gitbook](https://www.gitbook.io/) editor if you do not have it.
@@ -29,17 +34,14 @@ Section 6/What else can we do is where all the fun stuff is (like making things 
 * Update a forked version of [app](https://github.com/pandafulmanda/chirper) accordingly.
 
 
-## Section 6 guides that need lots of love
+## Other todos include
 
-See [exploration issues](https://github.com/HoustonRuby/rails_girls/issues?q=is%3Aopen+is%3Aissue+label%3Aexploration).
-
-
-## Todo/roadmap
-
+- [ ] Complete (draft of) section 3.1 about messages [#12](/../../issues/12)
+- [ ] Complete (draft of) section 3.2 on showing messages by author [#13](/../../issues/13)
 - [ ] Downgrade app from Rails 4.2.0.beta2 to stable  [#7](/../../issues/7)
 - [ ] Re-do screenshots all the way through cleanly [#8](/../../issues/8)
   - [ ] If there is time, redo app repo and tag it cleanly as well.
-- [ ] Test through guide [#9](/../../issues/9)
+- [ ] Test through guide, revise as needed [#9](/../../issues/9)
 - [ ] If Mac this, if PC that language in guide [#10](/../../issues/10)
   - [ ] Ideally, this would be something that toggles to show the selected one.  It will be static if making it toggle will take up too much time.
 - [ ] Link discussions/concepts to reference pages/appendix with the intent of helping someone who looks at the book again after the workshop.  [#11](/../../issues/11)
