@@ -21,27 +21,29 @@ Section 6/What else can we do is where all the fun stuff is (like making things 
 ## To contribute,
 
 * Download [Gitbook](https://www.gitbook.io/) editor if you do not have it.
-* Fork both this and the app repo.
+* Fork this repo.
 * Open repo using Gitbook.
   * Edit it and see the markdown live preview =).
   * Can also be edited using anything else
 * Submit pull request with description of what was added.  If there is a pre-formed issue about it, please tag the issue.
+* Update a forked version of [app](https://github.com/pandafulmanda/chirper) accordingly.
 
 
 ## Section 6 guides that need lots of love
 
-See [Issues](https://github.com/HoustonRuby/rails_girls/issues).
+See [exploration issues](https://github.com/HoustonRuby/rails_girls/issues?q=is%3Aopen+is%3Aissue+label%3Aexploration).
 
 
 ## Todo/roadmap
 
-- [ ] Downgrade app from Rails 4.2.0.beta2 to stable
-- [ ] Re-do screenshots all the way through cleanly
+- [ ] Downgrade app from Rails 4.2.0.beta2 to stable  #7
+- [ ] Re-do screenshots all the way through cleanly #8
   - [ ] If there is time, redo app repo and tag it cleanly as well.
-- [ ] Test through guide on PC ( & Mac )
-- [ ] If Mac this, if PC that language in guide
+- [ ] Test through guide #9
+- [ ] If Mac this, if PC that language in guide #10
   - [ ] Ideally, this would be something that toggles to show the selected one.  It will be static if making it toggle will take up too much time.
-- [ ] Appendix is last priority, and can be perfected after workshop if there is not enough time.
+- [ ] Link discussions/concepts to reference pages/appendix with the intent of helping someone who looks at the book again after the workshop.  #11
+  * Appendix is last priority, and can be perfected after workshop if there is not enough time.
 
 
 ## References
@@ -52,6 +54,7 @@ It draws inspiration from:
 * [Hartl's Rails Tutorial](http://draft.railstutorial.org/book/)
 * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
 * [Rails Girls Houston February 2014 Guide](http://codeparkhouston.com/railsgirls/events/feb2014/workshop/app/)
+* [Make FB clone in min time](http://vysakh.quora.com/Making-a-Facebook-clone-using-Rails-in-minimum-time)
 
 ## Tips
 

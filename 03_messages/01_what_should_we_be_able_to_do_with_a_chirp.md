@@ -150,13 +150,15 @@ Let's see what happens when we try to go to one of these routes, namely [/chirps
 
 ![](../images/chrome_try_chirps_new.png)
 
-We can tell Rails to make a controller like we did before.
+We can tell Rails to make a controller like we did before, with a few extra "`actions`".
 
 ```bash
-$ rails generate controller chirps 
+$ rails generate controller chirps index new edit show
 ```
 
-
+> Why generate the controller with actions `index`, `new`, `edit`, and `show`?
+>
+> Rails will help set up the views for these actions for us as well.  If you look at the `rake routes` table, these actions (chirps#*index*, chirps#*new*, chirps#*edit*, and chirps#*show*) all have the verb 'GET'.  'GET' is that way we get pages automatically when we put the address in the browser.  These means these are the pages what will have some HTML content to them, just like the front-page.
 
 <!-- Lots to do here -->
 
