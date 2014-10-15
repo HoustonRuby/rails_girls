@@ -18,9 +18,9 @@ The base app is a single model CRUD app called Chirper that is an imitation of T
 Section 6/What else can we do is where all the fun stuff is (like making things easier on the eyes with Bootstrap).
 
 
-## Section 6 guides that need lots of love
+## [Section 6 guides that need lots of love](https://github.com/HoustonRuby/rails_girls/issues?q=is%3Aopen+is%3Aissue+label%3Aexploration)
 
-are here [exploration issues](https://github.com/HoustonRuby/rails_girls/issues?q=is%3Aopen+is%3Aissue+label%3Aexploration).
+[are here](https://github.com/HoustonRuby/rails_girls/issues?q=is%3Aopen+is%3Aissue+label%3Aexploration).
 
 
 ## To contribute,
