@@ -2,7 +2,7 @@
 
 This guide is written with love from the Rails Girls Houston Team.
 
-## Goal and Tone
+## Goal & Tone
 
 To provide a follow along guide that facilitates conversation with the coaches around app design areas and concepts.  We are aiming to inspire with exposure to Rails, and also encourage more experienced students to explore with guidance.
 
@@ -48,9 +48,7 @@ Section 6/What else can we do is where all the fun stuff is (like making things 
   * Appendix is last priority, and can be perfected after workshop if there is not enough time.
 
 
-## References
-
-It draws inspiration from:
+## This guide is inspired by
 
 * [Official Rails Girls Guides](http://guides.railsgirls.com/)
 * [Hartl's Rails Tutorial](http://draft.railstutorial.org/book/)
