@@ -1,16 +1,20 @@
-# Welcome to Rails Girls!
+# Rails Girls Houston, October 2014 Guide
 
-We are very excited to share with you how to build a web application using Ruby on Rails.
+This guide is written with love from the Rails Girls Houston Team.
 
-We love building websites because we get to be creative, solve problems, and make things.  We hope you experience the joy of creating today!
+It draws inspiration from:
 
-Each of us began our journeys to becoming web developers differently, but we find that a common thread is curiosity and a thirst for learning.
+* [Official Rails Girls Guides](http://guides.railsgirls.com/)
+* [Hartl's Rails Tutorial](http://draft.railstutorial.org/book/)
+* [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
+* [Rails Girls Houston February 2014 Guide](http://codeparkhouston.com/railsgirls/events/feb2014/workshop/app/)
 
-Today, we will cover:
+## App repo:
 
-1. Building a site like this (screenshot here)
-2. Ways to put your touch on the site
-3. Ways to keep building and learning
+Currently, this guide follows [this app repo](https://github.com/pandafulmanda/chirper).  Each section is being tagged at each step as much as possible.
 
-** Let's get building! **
+## To contribute:
 
+* Fork both this and the app repo.
+* Branch both.
+*
