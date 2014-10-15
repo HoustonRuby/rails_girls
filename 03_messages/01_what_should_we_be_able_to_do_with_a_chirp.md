@@ -156,13 +156,24 @@ We can tell Rails to make a controller like we did before, with a few extra "`ac
 $ rails generate controller chirps index new edit show
 ```
 
-> Why generate the controller with actions `index`, `new`, `edit`, and `show`?
+The terminal should tell you that it's made some files, like last time:
+
+![](../images/terminal_chirps_controller.png)
+
+
+> Why generate the *chirps* controller with actions `index`, `new`, `edit`, and `show`?
 >
-> Rails will help set up the views for these actions for us as well.  If you look at the `rake routes` table, these actions (chirps#*index*, chirps#*new*, chirps#*edit*, and chirps#*show*) all have the verb 'GET'.  'GET' is that way we get pages automatically when we put the address in the browser.  These means these are the pages what will have some HTML content to them, just like the front-page.
+> Rails will help set up the pages for these actions for us as well.  If you look at the `rake routes` table, these actions (chirps#*index*, chirps#*new*, chirps#*edit*, and chirps#*show*) all have the verb 'GET'.  'GET' is the way we get pages automatically when we type the web address in the browser.  These means these are the pages what will have some HTML content to them, just like the front-page.
 
+<!-- Was going to put something here about deleted the freshly created routes since they are redundant, but perhaps this is not needed. -->
+
+Now, if we try going to [/chirps/new](http://localhost:3000/chirps/new) again, we should see:
+
+![](../images/chrome_try_chirps_new_again.png)
+
+
+**Lots to do here**
 <!-- Lots to do here -->
-
-
 
 
 
@@ -180,7 +191,10 @@ We can line up what we saw from `rake routes` for chirps with what we did in the
 |  | PUT | /chirps/:id(.:format) | chirps#update | `Chirp.find(id).update(body: 'a body')` |
 |  | DELETE | /chirps/:id(.:format) | chirps#destroy | `Chirp.find(id).destroy` |
 
-<!-- Actually putting things in controllers here -->
+
+**Actually putting things in controllers here**
+<!-- Lots to do here -->
 
 
-<!-- Brief views here -->
+**Brief views here**
+<!-- Lots to do here -->
