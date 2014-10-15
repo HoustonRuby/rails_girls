@@ -1,3 +1,6 @@
+# no mac folder hidden info stuffs.
 .DS_Store
 
+
+# exclude gitbook generated files in repo as these do not to be versioned or edited directly.
 _book/
