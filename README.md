@@ -36,13 +36,13 @@ See [exploration issues](https://github.com/HoustonRuby/rails_girls/issues?q=is%
 
 ## Todo/roadmap
 
-- [ ] Downgrade app from Rails 4.2.0.beta2 to stable  #7
-- [ ] Re-do screenshots all the way through cleanly #8
+- [ ] Downgrade app from Rails 4.2.0.beta2 to stable  [#7](/../../issues/7)
+- [ ] Re-do screenshots all the way through cleanly [#8](/../../issues/8)
   - [ ] If there is time, redo app repo and tag it cleanly as well.
-- [ ] Test through guide #9
-- [ ] If Mac this, if PC that language in guide #10
+- [ ] Test through guide [#9](/../../issues/9)
+- [ ] If Mac this, if PC that language in guide [#10](/../../issues/10)
   - [ ] Ideally, this would be something that toggles to show the selected one.  It will be static if making it toggle will take up too much time.
-- [ ] Link discussions/concepts to reference pages/appendix with the intent of helping someone who looks at the book again after the workshop.  #11
+- [ ] Link discussions/concepts to reference pages/appendix with the intent of helping someone who looks at the book again after the workshop.  [#11](/../../issues/11)
   * Appendix is last priority, and can be perfected after workshop if there is not enough time.
 
 
