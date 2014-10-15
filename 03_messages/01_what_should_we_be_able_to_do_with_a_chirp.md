@@ -153,15 +153,12 @@ Let's see what happens when we try to go to one of these routes, namely [/chirps
 We can tell Rails to make a controller like we did before.
 
 ```bash
-$ rails generate controller chirps
+$ rails generate controller chirps 
 ```
 
 
 
-<!---->
-
-
-
+<!-- Lots to do here -->
 
 
 
@@ -181,4 +178,7 @@ We can line up what we saw from `rake routes` for chirps with what we did in the
 |  | PUT | /chirps/:id(.:format) | chirps#update | `Chirp.find(id).update(body: 'a body')` |
 |  | DELETE | /chirps/:id(.:format) | chirps#destroy | `Chirp.find(id).destroy` |
 
+<!-- Actually putting things in controllers here -->
 
+
+<!-- Brief views here -->

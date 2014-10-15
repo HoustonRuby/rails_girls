@@ -4,14 +4,18 @@ This guide is written with love from the Rails Girls Houston Team.
 
 ## Goal and Tone
 
-To provide a follow along guide that facilitates discussions with the coaches.  We are aiming to inspire with exposure to Rails, and also encourage more experienced students to explore with guidance.
+To provide a follow along guide that facilitates conversation with the coaches around app design areas and concepts.  We are aiming to inspire with exposure to Rails, and also encourage more experienced students to explore with guidance.
 
-Tone so far has been 
+Tone so far has been using first person (we, let's, etc...) as much as possible.  Also, we trigger some errors on purpose to familarize students with dealing with errors and to show how helpful Rails can be about errors.
 
 
-## The app repo
+## The app
 
 is at [this app repo](https://github.com/pandafulmanda/chirper), currently.  Each section is being tagged at each step as much as possible.
+
+The base app is a single model CRUD app called Chirper that is an imitation of Twitter.  It is barebones, and does not, for example, use a CSS framework immediately.
+
+Section 6/What else can we do is where all the fun stuff is (like making things easier on the eyes with Bootstrap).
 
 
 ## To contribute,
@@ -37,6 +41,7 @@ See [Issues](https://github.com/HoustonRuby/rails_girls/issues).
 - [ ] Test through guide on PC ( & Mac )
 - [ ] If Mac this, if PC that language in guide
   - [ ] Ideally, this would be something that toggles to show the selected one.  It will be static if making it toggle will take up too much time.
+- [ ] Appendix is last priority, and can be perfected after workshop if there is not enough time.
 
 
 ## References
