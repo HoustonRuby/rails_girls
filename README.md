@@ -25,13 +25,15 @@ Section 6/What else can we do is where all the fun stuff is (like making things 
 
 ## To contribute,
 
+if you are a coach, we'd like to add you to the Team and collaborators of this repo!  Please email Amanda you haven't been invited to the repo and would like to contribute =).
+
 * Download [Gitbook](https://www.gitbook.io/) editor if you do not have it.
-* Fork this repo.
+* Clone & branch.
 * Open repo using Gitbook.
   * Edit it and see the markdown live preview =).
   * Can also be edited using anything else
 * Submit pull request with description of what was added.  If there is a pre-formed issue about it, please tag the issue.
-* Update a forked version of [app](https://github.com/pandafulmanda/chirper) accordingly.
+* Update [app](https://github.com/pandafulmanda/chirper) accordingly.
 
 
 ## Other todos include
