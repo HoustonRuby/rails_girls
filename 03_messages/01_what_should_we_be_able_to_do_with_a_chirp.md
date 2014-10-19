@@ -149,16 +149,16 @@ We should see:
 
 We can line up what we saw from `rake routes` for chirps with what we did in the console like so:
 
-| Controller#Action | What should it do? | Example action code |
-| -- | -- | -- |
-| **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
-| chirps#create | Create a new chirp that get's saved | `Chirp.create(body: 'a body', author: 'some author')` |
-| **chirps#new** | Show a form on a page for someone to fill out a new chirp | `Chirp.new` |
-| **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
-| **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
-| chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
-| chirps#update | *same as previous* | `Chirp.find(id).update(body: 'a body')` |
-| chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
+| URI Pattern | Controller#Action | What should it do? | Example action code |
+| -- | -- | -- | -- |
+| /chirps(.:format) | **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
+| /chirps(.:format) | chirps#create | Create a new chirp that get's saved | `Chirp.create(body: 'a body', author: 'some author')` |
+| /chirps/new(.:format) | **chirps#new** | Show a form on a page for someone to fill out a new chirp | `Chirp.new` |
+| /chirps/:id/edit(.:format) | **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
+| /chirps/:id(.:format) | **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
+| /chirps/:id(.:format) | chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
+| /chirps/:id(.:format) | chirps#update | *same as previous* | `Chirp.find(id).update(body: 'a body')` |
+| /chirps/:id(.:format) | chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
 
 
 The bolded ones are the pages we will be starting with.
@@ -198,11 +198,11 @@ Having a look at`app/controllers/chirps_controller.rb`, we see:
 
 ### Let's work on the `index`.
 
-| Controller#Action | Description | Example action code |
-| -- | -- | -- |
-| **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
+| URI Pattern | Controller#Action | What should it do? | Example action code |
+| -- | -- | -- | -- |
+| /chirps(.:format) | **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
 
-In `app/controllers/chirps_controller.rb`, let's add
+In `app/controllers/chirps_controller.rb` in between `def index` and the closet `end`, let's add
 
 ```rb
   @chirps = Chirp.all
@@ -233,15 +233,126 @@ Pretty nifty!
 > Discuss with the coach.  What did we just do?  What the `controller` do?  What the `view` do?
 
 ### Let's look at one chirp.
-| Controller#Action | Description | Example action code |
-| -- | -- | -- |
-| **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
+| URI Pattern | Controller#Action | What should it do? | Example action code |
+| -- | -- | -- | -- |
+| /chirps/:id(.:format) | **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
 
+In the `show` action/function in  `app/controllers/chirps_controller.rb`, let's add
+
+```rb
+  @chirp = Chirp.find(params[:id])
+```
+![](../images/sublime_controller_show.png)
+
+
+In the corresponding view --`app/views/chirps/show.html.erb`, put this in:
+
+```html
+<h1>Chirp</h1>
+<p><%= @chirp.body %></p>
+<p>
+- <i><%= @chirp.author %></i>
+</p>
+```
+
+Now if we go to [/chirps/2](http://localhost:3000/chirps/2),
+we should see one chirp.
+
+It would nice to able to see the individual chirp just by clicking on a link from the list of all chirps.  Let's go back to `app/views/chirps/index.html.erb` and add:
+
+```html
+  <%= link_to "Read more", chirp_path(chirp) %>
+```
+right before the `<% end -%> of the loop so that `app/views/chirps/index.html.erb` looks like this:
+
+![](../images/sublime_link_to.png)
+
+Going to [/chirps](http://localhost:3000/chirps) now should show all the chirps, with a link to "Read More" underneath.  Clicking on each link will bring us to a new page with the specific chirp.
+
+We can also add a link back to all chirps in `view` with each of the posts.
+
+In `app/views/chirps/index.html.erb`, add to the bottom:
+
+```html
+<%= link_to "See All Chirps", chirps_path %>
+```
+
+> What does the link_to code do for us?  Discuss with the coach and look at the HTML in the browser with Inspect Element.
 
 ### Let's add new chirp.
 
+| URI Pattern | Controller#Action | What should it do? | Example action code |
+| -- | -- | -- | -- |
+| /chirps/new(.:format) | **chirps#new** | Show a form on a page for someone to fill out a new chirp | `Chirp.new` |
+| /chirps(.:format) | chirps#create | Create a new chirp that get's saved | `Chirp.create(body: 'a body', author: 'some author')` |
 
+We'll start by making a form on  [/chirps/new](http://localhost:3000/chirps/new).  In the `new` action/function in  `app/controllers/chirps_controller.rb`, we will add:
 
-### What if we want to edit that chirp?
+```rb
+    @chirp = Chirp.new
+```
+![](../images/sublime_new_chirp_controller.png)
+
+And in `app/views/chirps/new.html.erb`, let's make a form:
+
+```html
+<h1>Make a Chirp!</h1>
+
+<%= form_for @chirp do |f| %>
+
+  <div>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </div>
+
+  <div>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+
+  <div>
+    <%= f.submit 'Chirp!' %>
+  </div>
+
+<% end %>
+```
+
+Now, if we go to [/chirps/new](http://localhost:3000/chirps/new), we'll see a form for making a new chirp!
+
+![](../images/chrome_new_chirp_form.png)
+
+Let's try to chirp by filling out the form and press "Chirp!"
+
+![](../images/chrome_form_chirp.png)
+
+![](../images/chrome_chirp_error.png)
+
+> What happened?  Discuss with the coach and look at the code the `form_for` function made for us in our HTML using Inspect Element.
+
+Since submitting the form goes to the **chirps#create** controller action, the **chirps#create** should take the parameters that the form submits a make a new chirp with that.
+
+Let's add the following to our `app/controllers/chirps_controller.rb`:
+
+```rb
+  def create
+    @chirp = Chirp.new(params[:chirp].permit(:author, :body))
+    if @chirp.save
+      redirect_to chirp_path(@chirp)
+    end
+  end
+```
+Our controller should now look like this:
+
+![](../images/sublime_controller_create.png)
+
+Now, when we submit...
+
+![](../images/chrome_made_new.png)
+
+we get redirected to the new chirp!
+
+> Review with your coach.  What did we do?
+
+### What if we want to edit a chirp?
 
 
