@@ -130,7 +130,7 @@ resources :chirps
 
 ![](../images/sublime_routes_chirps_resource.png)
 
-This is a shortcut to make routes for doing things with a '`resource`' really quickly.
+This is a shortcut to make routes for doing things with a `resource` really quickly.
 
 If we reload our page, we see that it's still running.  So what has this `resources` thing done for us?  We can find out by going back to the commandline and asking Rails:
 
