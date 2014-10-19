@@ -143,11 +143,29 @@ We should see:
 ![](../images/terminal_resources_routes.png)
 
 > Let's talk about what routes are and what this idea of a resource is.
+>
+> What does each of these "actions" mean?  What should each do?
 
-## Linking the actions to the pages
 
-Let's see what happens when we try to go to one of these routes, namely [/chirps/new](http://localhost:3000/chirps/new).
+We can line up what we saw from `rake routes` for chirps with what we did in the console like so:
 
+| Controller#Action | What should it do? | Example action code |
+| -- | -- | -- |
+| **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
+| chirps#create | Create a new chirp that get's saved | `Chirp.create(body: 'a body', author: 'some author')` |
+| **chirps#new** | Show a form on a page for someone to fill out a new chirp | `Chirp.new` |
+| **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
+| **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
+| chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
+| chirps#update | *same as previous* | `Chirp.find(id).update(body: 'a body')` |
+| chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
+
+
+The bolded ones are the pages we will be starting with.
+
+Let's see what happens when we try to go to one of these routes, namely [/chirps](http://localhost:3000/chirps).
+
+<!-- TODO: change this out for chirps index -->
 ![](../images/chrome_try_chirps_new.png)
 
 We can tell Rails to make a controller like we did before, with a few extra "`actions`".
@@ -163,38 +181,67 @@ The terminal should tell you that it's made some files, like last time:
 
 > Why generate the *chirps* controller with actions `index`, `new`, `edit`, and `show`?
 >
-> Rails will help set up the pages for these actions for us as well.  If you look at the `rake routes` table, these actions (chirps#*index*, chirps#*new*, chirps#*edit*, and chirps#*show*) all have the verb 'GET'.  'GET' is the way we get pages automatically when we type the web address in the browser.  These means these are the pages what will have some HTML content to them, just like the front-page.
+> Rails will help set up the pages for these actions as well.  If you look at the `rake routes` table, these actions (chirps#*index*, chirps#*new*, chirps#*edit*, and chirps#*show*) all have the verb 'GET'.  'GET' is the way we get pages automatically when we type the web address in the browser.  This means these are the pages what will have some HTML content to them, just like the front-page.
 
 <!-- Was going to put something here about deleted the freshly created routes since they are redundant, but perhaps this is not needed. -->
 
-Now, if we try going to [/chirps/new](http://localhost:3000/chirps/new) again, we should see:
+Now, if we try going to [/chirps](http://localhost:3000/chirps) again, we should see:
+<!-- TODO: change this out for chirps index -->
 
 ![](../images/chrome_try_chirps_new_again.png)
 
+## Linking the actions to the pages
 
-**Lots to do here**
-<!-- Lots to do here -->
+Having a look at`app/controllers/chirps_controller.rb`, we see:
 
+![](../images/sublime_controller_chirps_initial.png)
 
+### Let's work on the `index`.
 
+| Controller#Action | Description | Example action code |
+| -- | -- | -- |
+| **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
 
-We can line up what we saw from `rake routes` for chirps with what we did in the console like so:
+In `app/controllers/chirps_controller.rb`, let's add
 
-| Prefix | Verb | URI Pattern | Controller#Action | Example action code |
-| -- | -- | -- | -- | -- |
-| chirps | GET | /chirps(.:format) | chirps#index | `Chirp.all` |
-|  | POST | /chirps(.:format) | chirps#create | `Chirp.create(body: 'a body', author: 'some author')` |
-| new_chirp | GET | /chirps/new(.:format) | chirps#new | `Chirp.new` |
-| edit_chirp | GET | /chirps/:id/edit(.:format) | chirps#edit | `Chirp.find(id)` |
-| chirp | GET | /chirps/:id(.:format) | chirps#show | `Chirp.find(id)` |
-|  | PATCH | /chirps/:id(.:format) | chirps#update | `Chirp.find(id).update(body: 'a body')` |
-|  | PUT | /chirps/:id(.:format) | chirps#update | `Chirp.find(id).update(body: 'a body')` |
-|  | DELETE | /chirps/:id(.:format) | chirps#destroy | `Chirp.find(id).destroy` |
+```rb
+  @chirps = Chirp.all
+```
+like so:
 
-
-**Actually putting things in controllers here**
-<!-- Lots to do here -->
+![](../images/sublime_all_chirps.png)
 
 
-**Brief views here**
-<!-- Lots to do here -->
+In the corresponding view --`app/views/chirps/index.html.erb`, put this in:
+
+```html
+<h1>All Chirps</h1>
+<% @chirps.each do |chirp| %>
+  <p><%= chirp.body %></p>
+  <p>
+    - <i><%= chirp.author %></i>
+  </p>
+<% end -%>
+```
+
+Now if we go to [/chirps](http://localhost:3000/chirps) again, we'll see:
+
+![](../images/chrome_all_chirps.png)
+
+Pretty nifty!
+
+> Discuss with the coach.  What did we just do?  What the `controller` do?  What the `view` do?
+
+### Let's look at one chirp.
+| Controller#Action | Description | Example action code |
+| -- | -- | -- |
+| **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
+
+
+### Let's add new chirp.
+
+
+
+### What if we want to edit that chirp?
+
+
