@@ -8,7 +8,7 @@
 ## The command line
 *This is where we will tell Rails to do stuff for us, like start a new project, or run our website!*
 
-This little window can seem intimitating, but with practice, you will get the hang of it and feel its power =).
+This little window can seem intimidating, but with practice, you will get the hang of it and feel its power =).
 
 Let's try a couple things to get started:
 
