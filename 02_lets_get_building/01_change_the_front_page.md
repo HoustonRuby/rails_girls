@@ -36,7 +36,7 @@ When it's done, we'll see the `$ ` again.  If we press the up arrow, it will sho
 $ rails generate controller home index
 ```
 
-This time, Rails should know how to make the "`controller`".
+This time, Rails should know how to make the `controller`.
 
 We should see something like this:
 
@@ -78,7 +78,7 @@ type:
     root to: 'home#index'
 ```
 
-This will tell Rails to point the "`root`" of the site to the page we told Rails to make.
+This will tell Rails to point the `root` of the site to the page we told Rails to make.
 
 Now, if we go to Chrome and refresh, we should see something like:
 
