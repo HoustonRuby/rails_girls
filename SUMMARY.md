@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Welcome to Rails Girls!](00_welcome_to_rails_girls/00_README.md)
    * [What are we building?](00_welcome_to_rails_girls/01_what_are_we_building.md)
 * [Before we code...](01_before_we_code/00_README.md)
@@ -13,8 +14,7 @@
    * [Show messages by author](03_messages/02_show_messages_by_author.md)
    * [Review: What did we do?](03_messages/03_review_what_did_we_do.md)
 * [Images would be fun...](04_adding_images/00_README.md)
-   * [Adding first ruby gem](04_adding_images/01_adding_first_ruby_gem.md)
-   * [Add image to message](04_adding_images/02_add_image_to_message.md)
+   * [Add images to chirps](04_adding_images/02_add_image_to_message.md)
    * [Show image](04_adding_images/03_show_images.md)
    * [Review: What did we do?](04_adding_images/04_review_what_did_we_do.md)
 * [Let's see what else we can do!](05_explore/README.md)
