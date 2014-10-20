@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Welcome to Rails Girls!](00_welcome_to_rails_girls/00_README.md)
    * [What are we building?](00_welcome_to_rails_girls/01_what_are_we_building.md)
 * [Before we code...](01_before_we_code/00_README.md)
@@ -19,8 +20,8 @@
 * [Let's see what else we can do!](05_explore/README.md)
    * [Make Authors into Users](05_explore/make_authors_into_users.md)
    * [Beautifying your page with Bootstrap](05_explore/beautifying_your_page_with_bootstrap.md)
-   * [Putting your site online](05_explore/putting_your_site_online.md)
    * [Getting a Github account to share your code](05_explore/getting_a_github_account_to_share_your_code.md)
+   * [Putting your site online](05_explore/putting_your_site_online.md)
    * [Add cool effects with CSS](05_explore/add_cool_effects_with_css.md)
    * [Add interactivity with Javascript](05_explore/add_interactivity_with_javascript.md)
    * [Adding avatar images for users](05_explore/adding_avatar_images_for_users.md)
