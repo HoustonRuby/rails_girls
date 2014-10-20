@@ -9,7 +9,7 @@ right after the first line.
 
 ##Telling Rails about our Chirp Pic
 
-Now that we've added the property to our `model`, we'll need to build a migration to describing our new property to `ActiveRecord`. Lucky for us, the developers of Paperclip realized that every developer would need to take this step so all we need to do is type in the command line:
+Now that we've added the property to our `model`, we'll need to build a migration to describing our new property. Lucky for us, the developers of Paperclip realized that every developer would need to take this step so all we need to do is type in the command line:
 
 ```bash
 $ rails generate paperclip chirp pic
@@ -29,5 +29,5 @@ We've seen this before! In Chapter 4 we fixed this by typing:
 $ rake db:migrate
 ```
 
-in our command line to migrate new data into our chirp model. If we do this again and refresh our browser, we'll see our Chirp page!
+in our command line to tell rails to migrate the new property into our chirp model. If we do this again and refresh our browser, we'll see our Chirp page again.
 

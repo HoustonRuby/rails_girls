@@ -4,7 +4,7 @@
 >
 > * `Gemfile`
 >
-> * Gems and External Libraries
+> * `Gems` and External Libraries
 >
 > * Image Upload
 

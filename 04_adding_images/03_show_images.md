@@ -1,27 +1,42 @@
-#Uploading and Viewing Chirp Pics
-
-We'll need to add an upload field to our chirp form so that. First let's add it to our form. Open up `app/views/chirps/_form.html.erb` and add:
-
-```rails
-<%= form.file_field :pic %>
-```
-after the message field.
-
 ##Permitting Pic in the Chirp `Controller`
 
-We'll need to tell Rails that we allow editing of the newly added pic property. Lets open `FILE PATH` and add `:pic` to:
+We'll need to tell Rails that we allow editing of the newly added pic property. Lets open `app/controllers/chirps_controller.rb` and add `:pic` to:
 
 ```rails
 def chirp_params
   params.require(:chirp).permit(:author, :message, :pic)
 end
+````
+
+##New Chirps with Pics
+
+Now that the controller has permission to change add a pic we'll need to add a way to upload a file. Let's open up `app/views/chirps/new.html.erb` and add:
+
+```html
+<div>
+  <%= f.label :pic %>
+  <%= f.file_field :pic %>
+</div>
 ```
+after the body field. Now when you go to add, you'll see:
+
+<!--Insert image of new create page-->
+
+Add the same code to `app/views/chirps/edit.html.erb` and you'll then seed:
+
+<!--Insert image of new edit page-->
 
 ##Viewing Our Pics
 
-We'll also need to add the images to our index and show pages. We'll do this by adding:
+After we've uploaded a new chirp with an image, we'll want to see it. First let's add:
 
-```rails
-<%= image_tag @chirp.pic.url %>
+```html
+<p><%= image_tag @chirp.pic.url %></p>
 ```
-to both `FILE PATH` and `FILE PATH`
+to `app/views/chirps/show.html.erb`. Now when you upload a chirp, you'll see:
+
+<!--Insert image of new show page-->
+
+Repeat for `app/views/chirps/index.html.erb`, and you'll now see:
+
+<!--Insert image of new index page-->

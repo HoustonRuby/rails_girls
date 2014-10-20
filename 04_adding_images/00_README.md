@@ -1,10 +1,10 @@
 # What if I want to Chirp images?
 
-We are going to need some outside help for this one! In order to chirp our latest fashion images, we'll need to use a library. In Rails we call these `gems`.
+We are going to need some outside help for this one! In order to chirp our latest fashion images, we'll need to use a new `gem`.
 
-## Adding paperclip
+## Adding Paperclip
 
-Let's add paperclip to our project. First, we need to open our `Gemfile` and add to the bottom:
+Let's add the `gem` Paperclip to our project. First, we need to open our `Gemfile` and add to the bottom:
 
 ```rails
 gem "paperclip", "~> 4.2"
