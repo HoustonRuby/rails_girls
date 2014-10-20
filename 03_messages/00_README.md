@@ -15,9 +15,9 @@ $ rails generate model Chirp body:text author:string
 
 Since we are writting Chirper, let's call these messages chirps!
 
-Rails will now make something called a `model` to represent this idea of a Chirp.  With a `model`, Rails can associate different actions to do with Chirps, and can save different Chirps we'll be making to a *database*.
+Rails will now make something called a "`model`" to represent this idea of a Chirp.  With a "`model`", Rails can associate different actions to do with Chirps, and can save different Chirps we'll be making to a *database*.
 
-> Discuss more with your coach about what a `model` is and what a *database* does.
+> Discuss more with your coach about what a "`model`" is and what a *database* does.
 
 Our commandline should now look like this:
 
