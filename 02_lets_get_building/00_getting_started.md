@@ -1,6 +1,6 @@
 # Getting Started
 
-Let's start by telling Rails to make our first application.  Since we are making a Twitter clone, let's call our application Chirper.
+Let's start by telling Rails to make our first application.  Since we are making a Twitter clone, let's call our application chirper.
 
 ## Creating your Rails Applications
 

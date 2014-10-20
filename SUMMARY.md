@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Welcome to Rails Girls!](00_welcome_to_rails_girls/00_README.md)
    * [What are we building?](00_welcome_to_rails_girls/01_what_are_we_building.md)
 * [Before we code...](01_before_we_code/00_README.md)
@@ -10,6 +11,11 @@
    * [Review: What did we do?](02_lets_get_building/02_review_what_did_we_do.md)
 * [Well...we need messages!](03_messages/00_README.md)
    * [What should we be able to do with a message?](03_messages/01_what_should_we_be_able_to_do_with_a_chirp.md)
+       * [List all chirps](03_messages/list_all_chirps.md)
+       * [Show one chirp](03_messages/show_one_chirp.md)
+       * [Add a new chirp](03_messages/add_a_new_chirp.md)
+       * [Edit an existing chirp](03_messages/edit_an_existing_chirp.md)
+       * [Deleting a chirp](03_messages/deleting_a_chirp.md)
    * [Show messages by author](03_messages/02_show_messages_by_author.md)
    * [Review: What did we do?](03_messages/03_review_what_did_we_do.md)
 * [Images would be fun...](04_adding_images/README.md)
