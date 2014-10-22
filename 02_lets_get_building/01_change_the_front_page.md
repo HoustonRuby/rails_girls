@@ -84,7 +84,7 @@ Now, if we go to Chrome and refresh, we should see something like:
 
 ![](../images/chrome_home-index.png)
 
-Note that if we go to http://localhost:3000/home/index, we will see the same thing:
+Note that if we go to [http://localhost:3000/home/index](http://localhost:3000/home/index), we will see the same thing:
 
 ![](../images/chrome_home-index_at_route.png)
 
@@ -113,7 +113,7 @@ For now, this is what I will do.
 <p>This is Chirper, a fun way to post short messages on the web!</p>
 ```
 
-My page at http://localhost:3000/ now looks like this:
+My page at [http://localhost:3000/](http://localhost:3000/) now looks like this:
 
 ![](../images/chrome_home-index_editted.png)
 

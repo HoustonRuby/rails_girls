@@ -11,7 +11,7 @@ As we discussed, we should be able to **create** a new Chirp, **show** a Chirp, 
 $ rails console
 ```
 
-> Ask your coach what is the Rails console.
+> Ask your coach what the Rails console is.
 
 We should see:
 
@@ -99,13 +99,35 @@ Some other things to try:
 ```
 
 ```rb
+> Chirp.where()
+```
+
+```rb
 > Chirp.where(author: 'Big Bird')
+```
+
+```rb
+> Chirp.find_by(author: 'Big Bird')
 ```
 <!-- TODO: add link to things to try-->
 
-> Talk through these different things with your coach.  See what else you can try here:
+> Talk through these different things with your coach.  Ask your coach, what else [could we try](http://guides.rubyonrails.org/active_record_basics.html)?
 >
 > What could we do?
+
+| Code | Effect (*Describe what each did below or with your coach*) |
+| -- | -- |
+| `Chirp.all` |           |
+| `Chirp.new` |           |
+| `Chirp.new(parameters)` |           |
+| `Chirp.find(id)` |           |
+| `Chirp.find(id).update(parameters)` |           |
+| `Chirp.create(parameters)` |           |
+| `Chirp.find(id).destroy` |           |
+| `Chirp.where(parameters)` |           |
+| `Chirp.find_by(parameters)` |           .|
+
+> Note especially the differences between `find`, `where`, and `find_by`.
 
 ## Let's add pages for the things that we can do.
 
@@ -146,7 +168,6 @@ We should see:
 >
 > What does each of these "actions" mean?  What should each do?
 
-
 We can line up what we saw from `rake routes` for chirps with what we did in the console like so:
 
 | URI Pattern | Controller#Action | What should it do? | Example action code |
@@ -163,7 +184,7 @@ We can line up what we saw from `rake routes` for chirps with what we did in the
 
 The bolded ones are the pages we will be starting with.
 
-Let's see what happens when we try to go to one of these routes, namely [/chirps](http://localhost:3000/chirps).
+Let's see what happens when we try to go to one of these routes, namely [http://localhost:3000/chirps](http://localhost:3000/chirps).
 
 <!-- TODO: change this out for chirps index -->
 ![](../images/chrome_try_chirps_new.png)
@@ -185,7 +206,7 @@ The terminal should tell you that it's made some files, like last time:
 
 <!-- Was going to put something here about deleted the freshly created routes since they are redundant, but perhaps this is not needed. -->
 
-Now, if we try going to [/chirps](http://localhost:3000/chirps) again, we should see:
+Now, if we try going to [http://localhost:3000/chirps](http://localhost:3000/chirps) again, we should see:
 <!-- TODO: change this out for chirps index -->
 
 ![](../images/chrome_try_chirps_new_again.png)

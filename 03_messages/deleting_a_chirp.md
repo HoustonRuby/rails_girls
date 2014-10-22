@@ -22,6 +22,6 @@ Notice in the verb column for this route, we have the word `DELETE`.  This is a 
 
 
 
-Now, if we go to [this chirp](http://localhost:3000/chirps/5) and click "Delete this Chirp," we will be redirected to the list of chirps with that chirp missing.
+Now, if we go to [this chirp at http://localhost:3000/chirps/5](http://localhost:3000/chirps/5) and click "Delete this Chirp," we will be redirected to the list of chirps with that chirp missing.
 
 > Ask your coach about the `DELETE` methods and other methods like `GET`, `PUT` and `POST`.

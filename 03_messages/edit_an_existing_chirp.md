@@ -41,7 +41,7 @@ And in `app/views/chirps/edit.html.erb`, let's make a form using the existing ch
 <% end %>
 ```
 
-Now, if we go to an [edit page](http://localhost:3000/chirps/2/edit) of a chirp, we should see something like:
+Now, if we go to an edit page of a chirp, like the one at [http://localhost:3000/chirps/2/edit](http://localhost:3000/chirps/2/edit), we should see something like:
 
 ![](../images/chrome_edit.png)
 
@@ -74,7 +74,7 @@ Great!  Let's add a link on the show chirp page so that we can easily get to the
 <%= link_to "Edit this Chirp", edit_chirp_path(@chirp) %>
 ```
 
-Now, [showing a chirp](http://localhost:3000/chirps/2) has a link for us to edit the chirp!
+Now, showing a chirp, [http://localhost:3000/chirps/2](http://localhost:3000/chirps/2) has a link for us to edit the chirp!
 
 ![](../images/chrome_edit_chirp_link.png)
 

@@ -5,7 +5,7 @@
 | /chirps/new(.:format) | **chirps#new** | Show a form on a page for someone to fill out a new chirp | `Chirp.new` |
 | /chirps(.:format) | chirps#create | Create a new chirp that get's saved | `Chirp.create(body: 'a body', author: 'some author')` |
 
-We'll start by making a form on  [/chirps/new](http://localhost:3000/chirps/new).  In the `new` action/function in  `app/controllers/chirps_controller.rb`, we will add:
+We'll start by making a form on  [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new).  In the `new` action/function in  `app/controllers/chirps_controller.rb`, we will add:
 
 ```rb
     @chirp = Chirp.new
@@ -36,7 +36,7 @@ And in `app/views/chirps/new.html.erb`, let's make a form:
 <% end %>
 ```
 
-Now, if we go to [/chirps/new](http://localhost:3000/chirps/new), we'll see a form for making a new chirp!
+Now, if we go to [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new), we'll see a form for making a new chirp!
 
 ![](../images/chrome_new_chirp_form.png)
 
@@ -73,4 +73,4 @@ Now, when we submit...
 
 we get redirected to the new chirp.
 
-> Review with your coach.  What did we do?
+> Review with your coach.  What does the `.permit` in our code help do? What did we work with?

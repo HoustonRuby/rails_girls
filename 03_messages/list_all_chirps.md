@@ -28,7 +28,7 @@ In the corresponding view --`app/views/chirps/index.html.erb`, put this in:
 <% end -%>
 ```
 
-Now if we go to [/chirps](http://localhost:3000/chirps) again, we'll see:
+Now if we go to [http://localhost:3000/chirps](http://localhost:3000/chirps) again, we'll see:
 
 ![](../images/chrome_all_chirps.png)
 

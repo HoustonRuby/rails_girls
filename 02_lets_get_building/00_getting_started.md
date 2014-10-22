@@ -49,7 +49,7 @@ INFO  ruby 1.9.3 (2012-12-25) [x86_64-darwin12.2.1]
 INFO  WEBrick::HTTPServer#start: pid=91441 port=3000
 ~~~
 
-If you go to a web browser like Chrome, you can view your website at `http://localhost:3000`
+If you go to a web browser like Chrome, you can view your website at [http://localhost:3000](http://localhost:3000)
 
 ![](../images/rails_new_site.png)
 
