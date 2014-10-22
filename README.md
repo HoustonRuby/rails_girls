@@ -38,7 +38,7 @@ if you are a coach, we'd like to add you to the Team and collaborators of this r
 
 ## Other todos include
 
-- [ ] Complete (draft of) section 3.1 about messages [#12](/../../issues/12)
+- [x] Complete (draft of) section 3.1 about messages [#12](/../../issues/12)
 - [ ] Complete (draft of) section 3.2 on showing messages by author [#13](/../../issues/13)
 - [ ] Downgrade app from Rails 4.2.0.beta2 to stable  [#7](/../../issues/7)
 - [ ] Re-do screenshots all the way through cleanly [#8](/../../issues/8)
