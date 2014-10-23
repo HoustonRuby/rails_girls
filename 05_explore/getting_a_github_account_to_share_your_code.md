@@ -46,7 +46,7 @@ git add .
 git commit -m "Initial commit."
 ```
 
-**COACH:** Explain .gitignore to the students and why we don’t want these files included in our project's version history.
+> **COACH:** Explain .gitignore to the students and why we don’t want these files included in our project's version history.
 
 ## Using git
 
