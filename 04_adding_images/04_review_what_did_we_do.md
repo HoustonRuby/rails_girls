@@ -7,6 +7,8 @@
 > * `Gems` and External Libraries
 >
 > * Image Upload
+>
+> * `image_tag`
 
 
 Now that we've got the base app working, what other things can we add?

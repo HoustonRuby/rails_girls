@@ -1,3 +1,5 @@
+<!-- TODO: need to like adding chirps page on the list page somewhere in this section -->
+
 # Add a new chirp
 
 | URI Pattern | Controller#Action | What should it do? | Example action code |

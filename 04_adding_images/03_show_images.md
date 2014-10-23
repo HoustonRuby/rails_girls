@@ -35,6 +35,7 @@ and at [http://localhost:3000/chirps/3/edit](http://localhost:3000/chirps/3/edit
 After we've uploaded a new chirp with an image, we'll want to see it. First let's add:
 
 ```html
+
 <p><%= image_tag @chirp.pic.url, width: '100' %></p>
 ```
 to `app/views/chirps/show.html.erb`.

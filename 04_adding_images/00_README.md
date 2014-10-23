@@ -2,7 +2,7 @@
 
 We are going to need some outside help for this one! In order to chirp our latest cat images, we'll need to use a new `gem`.
 
-> `gems` are packages of code that are ready for anyone working on a Rails project to use.  Ask your coach about `gems` and some of the cool things they can do.
+> `gems` are packages of code that are ready for anyone working on a Rails project to use.  Ask your coach what `gems` they use day-to-day.
 
 ## Adding Paperclip
 

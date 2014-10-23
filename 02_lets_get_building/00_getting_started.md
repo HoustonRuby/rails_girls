@@ -57,4 +57,4 @@ You will be greeted by your front page.
 
 ## You've started a brand new rails project!
 
-Let's update this front page and make it our own!
+Let's update this front page and make it our own.
