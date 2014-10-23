@@ -1,4 +1,4 @@
-##Permitting Pic in the Chirp `Controller`
+## Permitting Pic in the Chirp `Controller`
 
 We'll need to tell Rails that we allow editing of the newly added pic property. Lets open `app/controllers/chirps_controller.rb` and add `:pic` to:
 

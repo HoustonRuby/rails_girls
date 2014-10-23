@@ -13,5 +13,7 @@
 > * `form_for`
 >
 > * `html`
+>
+> * `params.permit`
 
 How about being able to add images to our chirps?
