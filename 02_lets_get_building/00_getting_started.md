@@ -20,7 +20,7 @@ First we will click on File and then select Open.
 
 ![](../images/sublime_open.png)
 
-Next, we will find the folder we just created with `rails new chirper`.
+Next, we will find the folder we just created.
 
 ![](../images/open_window.png)
 
@@ -30,7 +30,7 @@ After we open the folder, we can see our Rails project structure in Sublime's pr
 
 ## Starting our Rails Application
 
-Time to start our Rails Application. Basically a quick test to see if we did everything right. :)
+Time to start our Rails Application. Basically, we want to do a quick test to see if we did everything right. :)
 
 ~~~
 $ cd chirper
@@ -49,9 +49,11 @@ INFO  ruby 1.9.3 (2012-12-25) [x86_64-darwin12.2.1]
 INFO  WEBrick::HTTPServer#start: pid=91441 port=3000
 ~~~
 
-If you go to a web browser like Chrome, you can view your website at [http://localhost:3000](http://localhost:3000)
+If you go to a web browser like Chrome, you can view your website at [http://localhost:3000](http://localhost:3000).
 
 ![](../images/rails_new_site.png)
+
+You will be greeted by your front page.
 
 ## You've started a brand new rails project!
 

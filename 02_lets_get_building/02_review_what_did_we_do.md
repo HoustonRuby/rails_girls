@@ -1,11 +1,11 @@
 # Review: What did we do?
 
-> Let's talk through what we worked with:
+> Let's talk about what we worked with:
 >
 > * Rails
 >
 > * The commandline
->
+>   * Command prompt `$` or `>`
 >   * The up arrow trick
 >
 > * Sublime Text
@@ -17,4 +17,4 @@
 > * `html`
 
 
-Let's see what else we can do.
+Ok, let's see what else we can do.

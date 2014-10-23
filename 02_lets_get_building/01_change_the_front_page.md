@@ -1,6 +1,6 @@
 # Change the front page
 
-Let's tell Rails to make an index page at our home for us.  Before we can tell the commandline to do something new, we have to tell it quit what it's currently doing (running the server) by pressing `Ctrl + c`.
+Let's tell Rails to make an index page at our home for us.  Before we can tell the commandline to do something new, we have to tell it quit what it's currently doing (running the server) by pressing `Ctrl + c`. You'll see that this gives us back our command prompt `$`.
 
 Then, we can tell it to make something:
 
@@ -23,7 +23,7 @@ Then, the commandline will say something like:
 ![](../images/terminal_fetching_gems.png)
 
 
-This means it is looking up for some packages called `gems` to download to our `chirper` folder so that we can use them! This might take awhile.
+This means it is looking for some packages - called `gems` - to download to our `chirper` folder so we can use them! This might take a while.
 
 > Ask your coach what `gems` are while you're waiting.
 
@@ -42,7 +42,7 @@ We should see something like this:
 
 ![](../images/terminal_controller.png)
 
-This means that Rails made some files for us!  Let's have a look in Sublime Text. If we open `app/controllers/home_controller.rb`, we should see:
+This means that Rails made some files for us.  Let's have a look in Sublime Text. If we open `app/controllers/home_controller.rb`, we should see:
 
 ![](../images/home_controller.png)
 
@@ -50,7 +50,7 @@ Great!  Let's refresh our page in Chrome.
 
 ![](../images/chrome_no_server.png)
 
-It looks like we've forgotten something.  We have to do`rails server` again so that there will be a page at this address. This can get annoying if we have to do keep starting the server and quitting the server to see changes.  So let's open a new terminal tab by pressing `cmd + t`.
+It looks like we've forgotten something.  We have to do `rails server` again so that there will be a page at this address. This can get annoying if we have to do keep starting the server and quitting the server to see changes.  So let's open a new terminal tab by pressing `cmd + t`.
 
 Now do:
 
@@ -100,7 +100,7 @@ Let's go find the file in `app/views/home/index.html.erb` like the page says!
 
 ![](../images/sublime_index_erb.png)
 
-That looks a lot like what's in the browser!  This is `html` with a touch of something called `erb`.  We can see that in the extension of the file, `.html.erb`.
+That looks a lot like what's in the browser, doesn't it?  This is `html` with a touch of something called `erb`.  We can see that in the extension of the file, `.html.erb`.
 
 > Ask your coach about `html` and `erb`.
 
