@@ -10,7 +10,7 @@ In our `config/routes.rb`, let's put the following after `resources :chirps`:
 
 ```rb
   scope ':author', as: 'author' do
-    resources :chirps, except: ['create', 'update', 'destroy']
+    resources :chirps
   end
 ```
 

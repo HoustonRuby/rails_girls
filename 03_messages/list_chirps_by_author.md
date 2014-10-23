@@ -41,7 +41,7 @@ In fact, if there are no parameters, Rails will run `Chirp.where` without any pa
 
 When we go to [http://localhost:3000/Big Bird/chirps](http://localhost:3000/Big%20Bird/chirps) and [http://localhost:3000/chirps](http://localhost:3000/chirps), we still get the expected chirps.
 
-Let'd link each author to their chirps in the listing.  In `app/views/chirps/index.html.erb`, update `<%= chirp.author %>` to `<%= link_to chirp.author, author_chirps_path(chirp.author) %>`:
+Let's link each author to their chirps in the listing.  In `app/views/chirps/index.html.erb`, update `<%= chirp.author %>` to `<%= link_to chirp.author, author_chirps_path(chirp.author) %>`:
 
 ![](../images/sublime_link_to_author.png)
 

@@ -111,9 +111,6 @@ Some other things to try:
 ```
 <!-- TODO: add link to things to try-->
 
-> Talk through these different things with your coach.  Ask your coach, what else [could we try](http://guides.rubyonrails.org/active_record_basics.html)?
->
-> What could we do?
 
 | Code | Effect (*Describe what each did below or with your coach*) |
 | -- | -- |
@@ -127,6 +124,8 @@ Some other things to try:
 | `Chirp.where(parameters)` |           |
 | `Chirp.find_by(parameters)` |           .|
 
+> Talk through these different things with your coach.  Ask your coach, what else [could we try](http://guides.rubyonrails.org/active_record_basics.html)?
+>
 > Note especially the differences between `find`, `where`, and `find_by`.
 
 ## Let's add pages for the things that we can do.
