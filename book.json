@@ -1,7 +1,8 @@
 {
+  "plugins" : [ "anchors", "richquotes" ],
   "pdf": {
     // Add toc at the end of the file
-    "toc": true,
+    "toc": false,
 
     // Add page numbers to the bottom of every page
     "pageNumbers": true,

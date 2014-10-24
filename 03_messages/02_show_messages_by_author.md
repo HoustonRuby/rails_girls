@@ -20,7 +20,7 @@ If we look at the routes for this using `rake routes` in our commandline, we wil
 
 ![](../images/terminal_route_scope.png)
 
-The ones starting with `:author` are the ones we just made!  To simplify, let's get rid of actions create, update, and destroy by adding `, except: ['create', 'update', 'destroy']` to what we just coded like so:
+The ones starting with `:author` are the ones we just made!  Let's skip **creating**, **updating**, and **destroying** chirps by adding `, except: ['create', 'update', 'destroy']` to what we just coded like so:
 
 ![](../images/sublime_route_scope_except.png)
 
