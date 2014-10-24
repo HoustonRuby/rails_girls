@@ -20,14 +20,6 @@ Let's try a couple things to get started:
 
 See the dollar sign? That's called the command prompt. This is where you type in commands as you see them in the code blocks. Note, you don't have to type the $, because it's already there, waiting for your commands!
 
-*Windows*
-
-
-
-
-In Windows, the command prompt is a greater than sign, >.  For this guide, we will be using the $ throughout to represent the command prompt.
-
-
 ```bash
 $ cd ~
 $ mkdir web-projects
@@ -35,6 +27,11 @@ $ cd web-projects
 $ rails -v
 $ ruby -v
 ```
+
+*Windows*
+
+In Windows, the command prompt is a greater than sign, >.  For this guide, we will be using the $ throughout to represent the command prompt.
+
 
 > What did we just do?  Let's discuss with your coach.
 
