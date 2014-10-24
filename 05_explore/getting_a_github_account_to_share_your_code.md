@@ -16,15 +16,26 @@ So as far back as the 1970's, software developers have used **Version Control** 
 
 Both git and GitHub have become important tools by helping people share open-source code more easily. In fact, all of the code for [Ruby on Rails can be found on a GitHub page](https://github.com/rails/rails). As you can see, over 2,400 people have worked together to make Rails as awesome as it is today!
 
-## Getting started with git
+## Getting git
 
-TODO: Install guide for OS X Mavericks? Users with 10.6, 10.7 and 10.8 should get git it via Rails Installer, as per the Rails Girls Install guide.
+To check if you have git, first enter the comman:
 
-Windows users will have Git via our own custom Install Guide.
+```bash
+$ git --version
+```
 
-Linux users have package manangers.
+If you run Windows, you should already have git built in to the "Git Bash" terminal you have been using.
 
---
+For Mac OS X, if you are using 10.6, 10.7, or 10.8, you should be fine as well. If you are using Mavericks (10.9), and do not have git installed, please talk to your coach.
+
+Linux users install git from your package mananger.
+
+Next we need git to know who you are. Because the tool was built to share code between people, it won't let you add new files without knowing who did it:
+
+```bash
+$ git config --global user.name "your-name"
+$ Type git config --global user.email "your-email"
+```
 
 Using git follows the pattern of writing `git` command in command line, followed by other words describing what you want git to do. So for instance, the usual workflow to save your changes in git is to first "add" them, and then "commit" them with a message describing what you did.
 
@@ -124,7 +135,16 @@ Here we have given the nickname "origin" to the remote repository. Now we can **
 
 ```bash
 $ git push origin
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.65 KiB | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To git@github.com:YOUR_USERNAME/chirps.git
+   938701a..a7ce718  master -> master
 ```
+Congratulations, if you check out your Github page now, you will see the Chirps Project has all of your code from today in it!
 
-TODO: Show result of push to origin.
+With any changes to your project in the future, to keep a copy of them on Github and share with the world, the same process repeats itself:
 
+Add Files via `$ git add .`, make a commit with a summary of what you did `$ git commit -m "Message Here!"` and then "push" the changes online via `$ git push origin`.
