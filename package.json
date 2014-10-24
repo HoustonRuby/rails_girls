@@ -1,0 +1,24 @@
+{
+  "name": "rails_girls",
+  "version": "0.0.0",
+  "description": "rails girls houston gitbook, october 014",
+  "main": "SUMMARY.MD",
+  "dependencies": {
+    "gitbook-plugin-anchors": "~0.3.0",
+    "gitbook-plugin-richquotes": "0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HoustonRuby/rails_girls.git"
+  },
+  "author": "Houston Ruby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HoustonRuby/rails_girls/issues"
+  },
+  "homepage": "https://github.com/HoustonRuby/rails_girls"
+}
