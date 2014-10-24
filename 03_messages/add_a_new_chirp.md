@@ -77,3 +77,17 @@ Now, when we submit...
 we get redirected to the new chirp.
 
 > Review with your coach.  What does the `.permit` in our code help do? What did we work with?
+
+For convenience, let's add a link to adding a new chirp on [http://localhost:3000/chirps](http://localhost:3000/chirps).
+
+We can do this by adding to `app/views/chirps/index.html.erb`, just below the heading:
+
+```rb
+<%= link_to "Make a new chirp", new_chirp_path %>
+<hr>
+```
+![](../images/sublime_all_with_new.png)
+
+[http://localhost:3000/chirps](http://localhost:3000/chirps) will now have a link to make new chirps.
+
+![](../images/chrome_all_with_new.png)
