@@ -1,6 +1,6 @@
 # List all chirps
 
-Let's work on the `index`.
+Let's work on the `index`, where we list all our Chirps for our users.
 
 | URI Pattern | Controller#Action | What should it do? | Example action code |
 | -- | -- | -- | -- |
@@ -16,7 +16,7 @@ like so:
 ![](../images/sublime_all_chirps.png)
 
 
-In the corresponding view --`app/views/chirps/index.html.erb`, put this in:
+In the corresponding view --`app/views/chirps/index.html.erb`, let's add this line:
 
 ```html
 <h1>All Chirps</h1>
@@ -33,5 +33,6 @@ Now if we go to [http://localhost:3000/chirps](http://localhost:3000/chirps) aga
 ![](../images/chrome_all_chirps.png)
 
 Pretty nifty!
+
 
 > Discuss with the coach.  What did we just do?  What did the `controller` do?  What did the `view` do?

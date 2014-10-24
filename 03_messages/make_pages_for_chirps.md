@@ -1,6 +1,6 @@
 ## Let's add pages for the things that we can do.
 
-Doing these things on the commandline is super fun and all, but if we want users to be able to do what we did with Chirps, we will need to map these capabilities to some pages.
+Doing these things on the commandline is super fun and all, but if we want users to be able to do what we did with Chirps, we need to map these abilities to some pages.
 
 The ability to:
 * create a new thing,
@@ -9,9 +9,9 @@ The ability to:
 * update a specific thing, and
 * delete a thing
 
-are very common and Rails has a way for us to start setting these up quickly.
+are all very common and Rails has a way for us to start setting these up quickly.
 
-We can start by adding routes in the `config/routes.rb`.  In that file, let's add that in a new line right after `do`:
+We can start by adding routes in the `config/routes.rb`.  In that file, let's add in a new line right after `do`:
 
 ```rb
 resources :chirps
@@ -21,9 +21,9 @@ resources :chirps
 
 ![](../images/sublime_routes_chirps_resource.png)
 
-This is a shortcut to make routes for doing things with a '`resource`' really quickly.
+This is a shortcut to make routes for doing things with a `resource` really quickly.
 
-If we reload our page, we see that it's still running.  So what has this `resources` thing done for us?  We can find out by going back to the commandline and asking Rails:
+If we reload our page, we see that it's still running.  So what has this `resources` thing done for us?  We can find out by going back to the commandline and asking Rails to:
 
 ```bash
 $ rake routes
@@ -35,9 +35,9 @@ We should see:
 
 > Let's talk about what routes are and what this idea of a resource is.
 >
-> What does each of these "actions" mean?  What should each do?
+> What do each of these "actions" mean?  What should each do?
 
-We can line up what we saw from `rake routes` for chirps with what we did in the console like so:
+We can match up what we saw from `rake routes` with what we did previously in the console:
 
 | URI Pattern | Controller#Action | What should it do? | Example action code |
 | -- | -- | -- | -- |
@@ -51,7 +51,7 @@ We can line up what we saw from `rake routes` for chirps with what we did in the
 | /chirps/:id(.:format) | chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
 
 
-The bolded ones are the pages we will be starting with.
+The bolded terms in the table above are the pages we will start with.
 
 Let's see what happens when we try to go to one of these routes, namely [http://localhost:3000/chirps](http://localhost:3000/chirps).
 
@@ -71,7 +71,7 @@ The terminal should tell you that it's made some files, like last time:
 
 > Why generate the *chirps* controller with actions `index`, `new`, `edit`, and `show`?
 >
-> Rails will help set up the pages for these actions as well.  If you look at the `rake routes` table, these actions (chirps#*index*, chirps#*new*, chirps#*edit*, and chirps#*show*) all have the verb 'GET'.  'GET' is the way we get pages automatically when we type the web address in the browser.  This means these are the pages what will have some HTML content to them, just like the front-page.
+> When we do it this way, Rails will help set up the pages for these actions as well.  If you look at the `rake routes` table, these actions (chirps#*index*, chirps#*new*, chirps#*edit*, and chirps#*show*) all have the verb 'GET'.  'GET' is the way we get pages automatically when we type the web address in the browser.  This means these are the pages what will have some HTML content to them, just like the front-page.
 
 <!-- Was going to put something here about deleted the freshly created routes since they are redundant, but perhaps this is not needed. -->
 

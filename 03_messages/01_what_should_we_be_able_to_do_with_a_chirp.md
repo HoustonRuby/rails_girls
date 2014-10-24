@@ -5,7 +5,7 @@
 
 ## Let's try doing some of these things!
 
-As we discussed, we should be able to **create** a new Chirp, **show** a Chirp, **update** a Chirp, **delete** a Chirp, and **list** all our Chirps.  Rails has a way for us to do these things in the commandline.  It's called the `rails console`.   Let's go to the commandline and try:
+As we discussed, we should be able to **create** a new Chirp, **show** a Chirp, **update** a Chirp, **delete** a Chirp, and **list** all our Chirps.  Rails has a way for us to do these things in the commandline.  It's called the *Rails console*.   Let's go to the commandline and try:
 
 ```bash
 $ rails console
@@ -17,7 +17,7 @@ We should see:
 
 ![](../images/terminal_rails_console.png)
 
-The `>` means that the Rails console is waiting for us to tell it things to do.
+The `>` means the *Rails console* is waiting for us to tell it something to do.
 
 Let's try a couple things:
 
@@ -29,7 +29,7 @@ Take note of the highlighted line:
 
 ![](../images/terminal_rails_console_chirp_new.png)
 
-Here, we can see the `body` and `author` properties that we told Rails about earlier, along with an `id`, a `created_at`, and a `updated_at`.  These will come in very handy later on.
+Here, we can see the `body` and `author` properties we told Rails about earlier, along with an `id`, a `created_at`, and a `updated_at`.  These will come in very handy later on.
 
 Next, let's making a new Chirp that has a `body` and an `author`.
 
@@ -126,4 +126,4 @@ Some other things to try:
 
 > Talk through these different things with your coach.  Ask your coach, what else [could we try](http://guides.rubyonrails.org/active_record_basics.html)?
 >
-> Note especially the differences between `find`, `where`, and `find_by`.
+> Take special note of the differences between `find`, `where`, and `find_by`.

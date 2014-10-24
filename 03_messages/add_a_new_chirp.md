@@ -1,6 +1,7 @@
-<!-- TODO: need to like adding chirps page on the list page somewhere in this section -->
+<!-- TODO: need to link adding chirps page on the list page somewhere in this section -->
 
 # Add a new chirp
+
 
 | URI Pattern | Controller#Action | What should it do? | Example action code |
 | -- | -- | -- | -- |
@@ -38,11 +39,11 @@ And in `app/views/chirps/new.html.erb`, let's make a form:
 <% end %>
 ```
 
-Now, if we go to [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new), we'll see a form for making a new chirp!
+Now, if we go to [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new), we'll see a form for making a new chirp.
 
 ![](../images/chrome_new_chirp_form.png)
 
-Let's try to chirp by filling out the form and press "Chirp!"
+Let's try to chirp by filling out the form and pressing "Chirp!"
 
 ![](../images/chrome_form_chirp.png)
 
@@ -50,7 +51,7 @@ Let's try to chirp by filling out the form and press "Chirp!"
 
 > What happened?  Discuss with the coach and look at the code the `form_for` function made for us in our HTML using Inspect Element.
 
-Since submitting the form goes to the **chirps#create** controller action, the **chirps#create** should take the parameters that the form submits a make a new chirp with that.
+Since submitting the form goes to the **chirps#create** controller action, **chirps#create** should take the parameters from the form and make a new Chirp with that.
 
 Let's add the following to our `app/controllers/chirps_controller.rb`:
 

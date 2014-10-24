@@ -7,15 +7,14 @@
 
 ## Let's tell Rails our definition of messages!
 
-Let's instruct Rails to work with these kinds of messages:
+Let's instruct Rails to work with these kinds of messages. Since we are writing Chirper, we'll call these messages Chirps!
 
 ```bash
 $ rails generate model Chirp body:text author:string
 ```
 
-Since we are writing Chirper, let's call these messages chirps!
 
-Rails will now make something called a `model` to represent this idea of a Chirp.  With a `model`, Rails can associate different actions to do with Chirps, and can save the different Chirps we'll be making to a *database*.
+Rails will now make something called a `model` to represent the idea of a Chirp.  As a `model`, Chirps can be associated with different actions and saved to a *database* by Rails.
 
 > Discuss more with your coach about what a "`model`" is and what a *database* does.
 
@@ -35,7 +34,7 @@ Ouch, an error!  But once again, Rails guides us by telling us what to do to fix
 $ rake db:migrate
 ```
 
-What we are doing is telling  something called `rake` to "migrate" the new information we've made about how Chirps are structured into the database.
+What we are doing is telling  something called `rake` to *migrate* the new information we've made about how Chirps are structured into the *database*.
 
 Now, we should see this in our terminal:
 

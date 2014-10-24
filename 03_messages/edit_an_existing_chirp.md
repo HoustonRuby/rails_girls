@@ -7,7 +7,7 @@ What if we want to edit a chirp?
 | /chirps/:id/edit(.:format) | **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
 | /chirps/:id(.:format) | chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
 
-As with showing a specific chirp, our editing form needs to know the information for a specific chirp.  We can tell our **chirps#edit** action the same thing as our **chirps#show** action by adding to the edit action:
+As with showing a specific chirp, our editing form needs to get the information for a specific Chirp.  We can tell our **chirps#edit** action to do the same thing as our **chirps#show** action by adding this line to the `edit` action:
 
 ```rb
     @chirp = Chirp.find(params[:id])
@@ -41,16 +41,16 @@ And in `app/views/chirps/edit.html.erb`, let's make a form using the existing ch
 <% end %>
 ```
 
-Now, if we go to an edit page of a chirp, like the one at [http://localhost:3000/chirps/2/edit](http://localhost:3000/chirps/2/edit), we should see something like:
+Now, if we go to the edit page of a chirp, like the one at [http://localhost:3000/chirps/2/edit](http://localhost:3000/chirps/2/edit), we should see something like:
 
 ![](../images/chrome_edit.png)
 
-When we try to edit and save, as before we get an error:
+When we try to edit and save, we get an error:
 
 ![](../images/chrome_update_error.png)
 
 
-Let's make a **chirps#update** action that will find the chirp we are trying to edit and update it by adding:
+We have to make a **chirps#update** action, one that will find the chirp we're trying to edit and update it. We can make this by adding:
 
 ```rb
   def update
@@ -64,17 +64,17 @@ Let's make a **chirps#update** action that will find the chirp we are trying to 
   end
 ```
 
-Now, when we make a change and update:
+Now, when we make a change and update, we'll see:
 
 ![](../images/chrome_chirp_updated.png)
 
-Great!  Let's add a link on the show chirp page so that we can easily get to the edit page.  In `app/views/chirps/show.html.erb`, add:
+Great!  Let's add a link on the show chirp page so we can easily get to the edit page when we want to.  In `app/views/chirps/show.html.erb`, add:
 
 ```html
 <%= link_to "Edit this Chirp", edit_chirp_path(@chirp) %>
 ```
 
-Now, showing a chirp, [http://localhost:3000/chirps/2](http://localhost:3000/chirps/2) has a link for us to edit the chirp!
+Now, when showing a Chirp, [http://localhost:3000/chirps/2](http://localhost:3000/chirps/2) has a link for us to edit the chirp.
 
 ![](../images/chrome_edit_chirp_link.png)
 
