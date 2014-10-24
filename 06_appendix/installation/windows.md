@@ -43,8 +43,8 @@ First head over to
 and in the left-hand column, under the **Devlopment Kit** section, select the download for "Ruby 2.0 and 2.1" for 32-bit or 64-bit depending on your version of Windows. They should be named "DevKit-mingw64-[lots of numbers]-sfx.exe". Run that and extract it to a location *with no spaces in the name* (here we will use C:\Ruby\DevKit). Then in your "Git Bash" window (or open a new one), you will want to run
 
 ```bash
-> cd C:\Ruby\DevKit
-> ruby dk.rb init
+$ cd C:\Ruby\DevKit
+$ ruby dk.rb init
 ```
 
 which will set up the DevKit for use in our next steps.
