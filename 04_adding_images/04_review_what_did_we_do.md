@@ -11,4 +11,4 @@
 > * `image_tag`
 
 
-Now that we've got the base app working, what other things can we add?
+Now we have the base app working. Congratulations! Next let's think about what other things we can do with our new app.
