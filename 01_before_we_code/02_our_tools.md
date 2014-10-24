@@ -24,10 +24,16 @@ See the dollar sign? That's called the command prompt. This is where you type in
 
 
 
+
+In Windows, the command prompt is a greater than sign, >.  For this guide, we will be using the $ throughout to represent the command prompt.
+
+
 ```bash
 $ cd ~
 $ mkdir web-projects
 $ cd web-projects
+$ rails -v
+$ ruby -v
 ```
 
 > What did we just do?  Let's discuss with your coach.
