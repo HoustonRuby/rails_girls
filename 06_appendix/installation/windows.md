@@ -40,14 +40,22 @@ First head over to
 
     http://rubyinstaller.org/downloads/
 
-and in the left-hand column, under the **Devlopment Kit** section, select the download for "Ruby 2.0 and 2.1" for 32-bit or 64-bit depending on your version of Windows. They should be named "DevKit-mingw64-[lots of numbers]-sfx.exe". Run that and extract it to a location *with no spaces in the name* (here we will use C:\Ruby\DevKit). Then in your "Git Bash" window (or open a new one), you will want to run
+and in the left-hand column, under the **Devlopment Kit** section, select the download for "Ruby 2.0 and 2.1" for 32-bit. They should be named "DevKit-mingw32-[lots of numbers]-sfx.exe". Run that and extract it to a location *with no spaces in the name* (here we will use C:\Ruby\DevKit). Then in your "Git Bash" window (or open a new one), you will want to run
 
 ```bash
 $ cd C:\Ruby\DevKit
 $ ruby dk.rb init
+$ ruby dk.rb install -f
 ```
+
+Open File Explorer and go to C:/Ruby/DevKit and double click the devkitvars.bat file. This will open a file quickly and then close it. Close all window and Ruby Bash.
 
 which will set up the DevKit for use in our next steps.
 
 ### ImageMagick
 
+Go to
+    
+    http://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/binaries/ImageMagick-6.7.7-10-Q8-windows-dll.exe
+
+This will download a file on your computer.
