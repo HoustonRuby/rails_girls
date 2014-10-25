@@ -48,7 +48,7 @@ $ ruby dk.rb init
 $ ruby dk.rb install -f
 ```
 
-Open File Explorer and go to C:/Ruby/DevKit and double click the devkitvars.bat file. This will open a file quickly and then close it. Close all window and Ruby Bash.
+Open File Explorer and go to C:\Ruby\DevKit and double click the devkitvars.bat file. This will open a file quickly and then close it. Close all window and Ruby Bash.
 
 which will set up the DevKit for use in our next steps.
 
@@ -58,4 +58,8 @@ Go to
     
     http://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/binaries/ImageMagick-6.7.7-10-Q8-windows-dll.exe
 
-This will download a file on your computer.
+This will download a file on your computer. Open your download folder, right click the file, and Run as Administrator. *This next part is important* When you get to the Select Desination Location within the install wizard change the path to C:\ImageMagick. Hit 'Next' until you get to the Select Additional Tools screen. Unclick the "Create Desktop Icon" and click the "Install development headers and libraries for C and C++. Then move on to Install.
+
+Open Command by going to Start Menu (or start screen in Windows 8) type cmd into the search, right click Command Prompt and Run as Administrator. When the command prompt opens run
+
+    gem install rmagick --platform=ruby -- --with-opt-lib=**c:/ImageMagick/lib** --with-opt-include=**c:/ImageMagick/include**
