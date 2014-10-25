@@ -61,7 +61,7 @@ With the id, we can look at the chirp with:
 We can update the `body` with:
 
 ```rb
-> first_chirp.find(id).update(body: 'The first chirp, with an edit!')
+> Chirp.find(1).update(body: 'The first chirp, with an edit!')
 ```
 
 Let's look at all the chirps we have in our table:

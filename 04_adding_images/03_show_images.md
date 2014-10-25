@@ -18,7 +18,7 @@ after the `body` field.
 
 ![](../images/sublime_pic_field_new.png)
 
-Now when you go to [http://localhost:3000/chirps/new], you'll see:
+Now when you go to [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new), you'll see:
 
 ![](../images/chrome_pic_field_new.png)
 
@@ -26,7 +26,7 @@ And when you add the same code to `app/views/chirps/edit.html.erb`
 
 ![](../images/sublime_pic_field_edit.png)
 
-and got to [http://localhost:3000/chirps/3/edit](http://localhost:3000/chirps/3/edit), you'll then see:
+and go to [http://localhost:3000/chirps/3/edit](http://localhost:3000/chirps/3/edit), you'll then see:
 
 ![](../images/chrome_pic_field_edit.png)
 
@@ -35,8 +35,7 @@ and got to [http://localhost:3000/chirps/3/edit](http://localhost:3000/chirps/3/
 After we've uploaded a new chirp with an image, we'll want to see it. First let's add:
 
 ```html
-
-<p><%= image_tag @chirp.pic.url, width: '100' %></p>
+<%= image_tag @chirp.pic.url, width: '100' %>
 ```
 to `app/views/chirps/show.html.erb`.
 
@@ -49,7 +48,7 @@ Now when you upload a chirp, you'll see:
 Repeat for `app/views/chirps/index.html.erb` with:
 
 ```html
-  <p><%= image_tag chirp.pic.url, width: '100' %></p>
+  <%= image_tag chirp.pic.url, width: '100' %>
 ```
 
 ![](../images/sublime_pic_list.png)

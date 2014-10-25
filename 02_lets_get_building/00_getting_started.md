@@ -39,15 +39,7 @@ $ rails server
 
 You should see something like the following in your terminal.
 
-~~~
-=> Booting WEBrick
-=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
-=> Run `rails server -h` for more startup options
-=> Ctrl-C to shutdown server
-INFO  WEBrick 1.3.1
-INFO  ruby 1.9.3 (2012-12-25) [x86_64-darwin12.2.1]
-INFO  WEBrick::HTTPServer#start: pid=91441 port=3000
-~~~
+![](../images/terminal_server.png)
 
 If you go to a web browser like Chrome, you can view your website at [http://localhost:3000](http://localhost:3000).
 

@@ -2,8 +2,6 @@
 
 Now we need to let Rails know that our chirps can have images. Let's open the chirp `model` at `app/model/chirp.rb` and add the pic property:
 
-<!-- TODO: would actually like to redo this, where default will be blank...is that possible? -->
-
 ```rb
   has_attached_file :pic, default_url: ""
   validates_attachment :image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }

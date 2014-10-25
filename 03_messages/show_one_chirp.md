@@ -40,7 +40,7 @@ Going to [http://localhost:3000/chirps](http://localhost:3000/chirps) now should
 
 We can also add a link back to the list of all Chirps in `view` in each of the posts.
 
-In `app/views/chirps/index.html.erb`, add to the bottom:
+In `app/views/chirps/show.html.erb`, add to the bottom:
 
 ```html
 <%= link_to "See All Chirps", chirps_path %>
