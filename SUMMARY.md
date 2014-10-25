@@ -41,10 +41,6 @@
        * [Nitrous.io](06_appendix/installation/nitrousio.md)
        * [Text Editor](06_appendix/installation/text_editor.md)
    * [How does the Internet work?](06_appendix/how_does_the_internet_work.md)
-   * [A look behind your favorite sites](06_appendix/a_look_behind_your_favorite_sites/README.md)
-       * [How do you interact with it?](06_appendix/a_look_behind_your_favorite_sites/how_do_you_interact_with_it.md)
-       * [Looking at the code](06_appendix/a_look_behind_your_favorite_sites/looking_at_the_code.md)
-   * [What is Git or version control?](06_appendix/what_is_git.md)
    * [Where to learn more in Houston](06_appendix/where_to_learn_more_in_houston.md)
    * [Awesome Resources](06_appendix/awesome_resources.md)
 
