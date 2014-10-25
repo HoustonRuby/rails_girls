@@ -62,4 +62,4 @@ This will download a file on your computer. Open your download folder, right cli
 
 Open Command by going to Start Menu (or start screen in Windows 8) type cmd into the search, right click Command Prompt and Run as Administrator. When the command prompt opens run
 
-    gem install rmagick --platform=ruby -- --with-opt-lib=**c:/ImageMagick/lib** --with-opt-include=**c:/ImageMagick/include**
+    gem install rmagick -- '--with-opt-dir="C:/ImageMagick"'
