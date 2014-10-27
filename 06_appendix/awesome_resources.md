@@ -56,11 +56,12 @@ Why is Javascript so popular?  Because it runs on every browser and therefore, e
     * A weekly design course to your inbox
 
 #### Application and cool things
+* **[Learn Layout](http://learnlayout.com/)**
+    * A site about css fundamentals and layout things commonly used in websites.
 * **[codrops](http://tympanus.net/codrops/)**
-    * Really neat examples of some of the things you can do with code and interface design
+    * Really inspiring examples of some of the things you can do with code and interface design
 * **[Sidebar](http://sidebar.io/)**
     * Daily digest of the top design news and resources
-
 
 ## Lists
 
