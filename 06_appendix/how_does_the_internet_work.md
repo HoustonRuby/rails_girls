@@ -1,8 +1,8 @@
 # How does the Internet work?
 
-Whenever you go to watch a video on Youtube, check your wall on Facebook, run a search on Google, or even just use the Chirper app we're building a conversation occurs between two or more programs--sometimes, on two or more different computers, sometimes even on two or more continents!
+Whenever you go to watch a video on Youtube, check your wall on Facebook, run a search on Google, or even just use the Chirper app we're building, a conversation occurs between two or more programs. Sometimes, the conversation occurs on two or more different computers, sometimes even on two or more continents!
 
-## A simple exmaple ##
+## A simple example ##
 
 Open your browser, and go to http://www.example.com](http://www.example.com).
 
@@ -44,7 +44,7 @@ Whenever you register a new domain name, you have to create so-called *DNS recor
 
 Once the browser has looked up the IP address for the website, it attempts to connect to that server over TCP. The server is "listening" for a connection, and will "accept" it if it is able. This connection will make sure that the web browser sees all the data requested arrive in order, and will do what it can to optimally use the network between the server and the client.
 
-You might be wondering how a server can tell the differences between all of the clients talking to it, how it can keep from mixing up the data being sent to different clients. In addition to just keeping track of what the source IP address of the client is, it also tracks the *port* a client connected on and connected from.
+You might be wondering how a server can tell the differences between all of the clients it's talking to, how it can keep from mixing up the data being sent to different clients. In addition to just keeping track of what the source IP address of the client is, it also tracks the *port* a client connected on and connected from.
 
 A *port* in TCP is a sort of subaddress for a given IP address; if an IP address is like a street address, a port is like a room number within that builing.
 
@@ -52,7 +52,7 @@ Different services on servers and clients use different ports. Some ports are co
 
 ### HTTP: The Language of the Web ###
 
-The Hypertext Transfer Protocol (**HTTP**) is the language used to communicate on the Internet. It isn't concerned with documents, images, videos, or anything themselves, but instead with the general problem of querying resources on a remote system.
+The Hypertext Transfer Protocol (**HTTP**) is the language used to communicate on the Internet. It isn't concerned with documents, images, videos, or any other thing itself, but instead with the general problem of querying resources on a remote system.
 
 Every HTTP request is written in plain text to a TCP connection, and looks like this:
 
@@ -85,7 +85,7 @@ Content-Length: 1270
 
 The first line is the repsonse, here declaring that the request was handled successfully (200 OK). There are many different status codes other than 200 you may expect back from a server: you've probably run into 403 (forbidden content), 404 (page not found), or even 500 (server is broken inside somewhere). Codes between 200 and 299 denote success, 300-399 denote redirection (perhaps a page has moved), 400-499 mean that the request is bad (badly formed, unauthorized, for something that doesn't exist, and so on), and 500-599 mean that while the request was valid the server was not able to process it.
 
-The remaining lines are again headers using the same form as the request. These headers tell us that the content type returned is just HTML text (a web page), that the date on the server is today, that the content "expires" and should not be cached beyond Oct 31, that the content was modified most recently on the 9th of August, that the server is an ECS server (as opposed to Nginx, Apache, or Webrick), and finally that the content (after the blank line) will be 1270 bytes. This last header is important to get right, because it lets the client know when the data has finished being delivered.
+The remaining lines are again headers using the same form as the request. These headers tell us that the content type returned is just HTML text (a web page), that the date on the server is today, that the content "expires" and should not be cached (saved) beyond Oct 31, that the content was modified most recently on the 9th of August, that the server is an ECS server (as opposed to Nginx, Apache, or Webrick), and finally that the content (after the blank line) will be 1270 bytes. This last header is important to get right, because it tells the client how to know when the data has finished being delivered.
 
 Note that there are several other types of requests HTTP supports. *POST* is used to create a new resource on the server, or to send a form in for processing. *PUT* is used to partially update an existing resource (say, updating your billing information). *DELETE* is used to remove a resource. There are several other so-called *HTTP verbs*, which are documented extensively online. GET and POST are the most common.
 
