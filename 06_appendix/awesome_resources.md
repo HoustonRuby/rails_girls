@@ -17,7 +17,7 @@ Other magnificient resources for learning Rails and staying up to date include:
 * **[Ruby Weekly](http://rubyweekly.com/)**
     * Weekly emails with the latest news about Ruby and Rails helps us  keep up to date with the latest tools and resources to check out.
 
-## Other common goals
+## For other common goals
 
 * **[On learning to code online](http://www.reddit.com/r/learnprogramming/comments/1dvhrt/codecademy_vs_code_school_vs_treehouse/)**
 * **[Coursera](https://www.coursera.org/)**
