@@ -29,6 +29,7 @@
    * [Getting a Github account to share your code](05_explore/getting_a_github_account_to_share_your_code.md)
    * [Putting your site online](05_explore/putting_your_site_online.md)
    * [Coming soon](05_explore/coming_soon.md)
+   * [What now?](05_explore/what_now.md)
 * [Appendix](06_appendix/README.md)
    * [Installation](06_appendix/installation/README.md)
        * [Windows](06_appendix/installation/windows.md)
