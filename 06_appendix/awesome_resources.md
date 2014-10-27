@@ -1,14 +1,14 @@
 ## To do more with Rails
-This guide was written with inspiration from the following guides.  These are some great next steps or ways to practice what you learned further:
+This guide was written with inspiration from the following guides.  These are some great next steps for ways to practice and expand on what you learned at Rails Girls:
 
 * **[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)**
-    * An excellent introductory guide that is structured like our guide, but goes a little deeper.  This makes it the **immediate next step**.
+    * An excellent introductory guide structured like our guide, but it goes a little deeper.  This makes it a good **immediate next step**.
 * **[Hartl's Rails Tutorial](https://www.railstutorial.org/book)**
     * This book is recomended over and over again, and covers web development as a process, not just making a web application with Rails.  It will take some time to get through, but is well worth the time if you are learning to be a web developer.
 
-Each of those resources also have their own lists of resources that are also awesome.
+Each of those resources have their own lists of resources that are awesome.
 
-Other manificient resources for learning Rails and staying up to date include:
+Other magnificient resources for learning Rails and staying up to date include:
 
 * **[RailsCast](http://railscasts.com/)**
     * This is a collection of screen casts. From the about page: "The screencasts are short and focus on one technique so you can quickly move on to applying it to your own project. The topics target the intermediate Rails developer, but beginners and experts will get something out of it as well."
@@ -17,7 +17,7 @@ Other manificient resources for learning Rails and staying up to date include:
 * **[Ruby Weekly](http://rubyweekly.com/)**
     * Weekly emails with the latest news about Ruby and Rails helps us  keep up to date with the latest tools and resources to check out.
 
-## Other coding things
+## Other resources for your own goals
 
 * **[On learning to code online](http://www.reddit.com/r/learnprogramming/comments/1dvhrt/codecademy_vs_code_school_vs_treehouse/)**
 * **[Coursera](https://www.coursera.org/)**
@@ -27,7 +27,7 @@ Other manificient resources for learning Rails and staying up to date include:
 Python and R are essential tools in these fields, because of their constantly expanding toolsets from great contributing communities.
 
 * **[Learn Python the Hard Way](http://learnpythonthehardway.org/book/)**
-    * A highly recommended books aimed at beginners with a solid focus on programming basics.
+    * A highly recommended books aimed at beginners with a stong focus on programming basics.
 * **[Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do)**
     * An intro to data anlysis with Python.
 * **[Quick-R](http://www.statmethods.net/)**
@@ -35,7 +35,7 @@ Python and R are essential tools in these fields, because of their constantly ex
 
 ### To code in Javascript
 
-Why is Javascript so popular?  Because it runs on every browser and therefore, everyone's computer, without any setup.  While it might not be as friendly to learn in some ways as Ruby and Rails, if you're coding for the web nowadays, you'd need to know a bit of Javascript.  It's even becoming quite a bit of a thing on the server side with the rise of Node.
+Why is Javascript so popular?  Because it runs on every browser, and therefore, on everyone's computer without any setup.  While in some ways it might not be as friendly to learn as Ruby and Rails, if you're coding for the web nowadays, you'd need to know a bit of Javascript.  It's even becoming quite a bit of a thing on the server side with the rise of Node.
 
 * **[Eloquent Javascript](http://eloquentjavascript.net/)**
     * A great introductory book about the basics of programming with Javascript.  It sets up coding problems with a fun narrative.
@@ -63,7 +63,7 @@ Why is Javascript so popular?  Because it runs on every browser and therefore, e
 * **[Sidebar](http://sidebar.io/)**
     * Daily digest of the top design news and resources
 
-## Lists
+## More Lists
 
 Teehee, this is a list of lists.
 
