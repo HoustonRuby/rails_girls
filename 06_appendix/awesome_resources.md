@@ -19,6 +19,9 @@ Other manificient resources for learning Rails and staying up to date include:
 
 ## Other coding things
 
+* [On learning to code online](http://www.reddit.com/r/learnprogramming/comments/1dvhrt/codecademy_vs_code_school_vs_treehouse/)
+* [Coursera](https://www.coursera.org/)
+
 ### To code for science, data, and academia
 
 Python and R are essential tools in these fields, because of their constantly expanding toolsets from great contributing communities.
