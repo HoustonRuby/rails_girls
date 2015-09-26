@@ -4,7 +4,7 @@ Now we need to let Rails know that our chirps can have images. Let's open the ch
 
 ```rb
   has_attached_file :pic, default_url: ""
-  validates_attachment :image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
+  validates_attachment :pic, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
 ```
 
 right after the first line.
