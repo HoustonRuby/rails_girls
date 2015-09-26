@@ -75,6 +75,11 @@ It is great for making your web applications interactive on the client side.  It
     * Daily digest of the top design news and resources
 
 ### On learning to code online
+* ** Online learning communities
+    * **[Code Newbie](http://www.codenewbie.org/)
+        * An extremely supportive online learning community
+    * **[Learn to Code With Me](http://learntocodewith.me/)
+    * **[FreeCodeCamp](http://www.freecodecamp.com/)
 * **[This](http://www.reddit.com/r/learnprogramming/comments/1dvhrt/codecademy_vs_code_school_vs_treehouse/)** is a great discussion on learning with the following:
     * **[Codecademy](http://codecademy.com)**
     * **[CodeSchool](http://codeschool.com)**
