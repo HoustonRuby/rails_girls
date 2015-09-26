@@ -4,10 +4,10 @@
 
 The information for showing and editing a chirp will be the same based on the parameters from the route.
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /:author/chirps/:id(.:format) | **chirps#show** | Show a chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
-| /:author/chirps/:id/edit(.:format) | **chirps#edit** | Show a form for editing an existing chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
+| /:author/chirps/:id | **chirps#show** | Show a chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
+| /:author/chirps/:id/edit | **chirps#edit** | Show a form for editing an existing chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
 
 
 Let's update the **chirps#show** and **chirps#edit** actions:

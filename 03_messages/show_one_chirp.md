@@ -1,8 +1,8 @@
 # Show one chirp
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /chirps/:id(.:format) | **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
+| /chirps/:id | **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
 
 In the `show` action/function in  `app/controllers/chirps_controller.rb`, let's add:
 

@@ -1,8 +1,8 @@
 # List chirps by author
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /:author/chirps(.:format) | **chirps#index** | Show a list of all chirps by author | `Chirp.where(author: 'some author')` |
+| /:author/chirps | **chirps#index** | Show a list of all chirps by author | `Chirp.where(author: 'some author')` |
 
 Looking at the **chirps#index** action right now, we need to add a case for when there is an author parameter from the route.  We could do this using `if params[:author]` and writing the code for the special case when there is an author after and putting the `Chirp.all` we have currently in the `else` case:
 

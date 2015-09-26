@@ -1,4 +1,4 @@
-# Welcome to Rails Girls!
+# Rails Girls September 2015
 
 We are very excited to share with you how to build a web application using Ruby on Rails.
 

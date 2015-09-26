@@ -2,9 +2,9 @@
 
 Let's work on the `index`, where we list all our Chirps for our users.
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /chirps(.:format) | **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
+| /chirps | **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
 
 In `app/controllers/chirps_controller.rb` in between `def index` and the closet `end`, let's add
 

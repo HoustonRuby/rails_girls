@@ -6,12 +6,15 @@
     "fontSize": 10,
     "paperSize": "a5",
     "margin": {
-        "right": 36,
-        "left": 36,
-        "top": 36,
-        "bottom": 36
+        "right": 20,
+        "left": 20,
+        "top": 8,
+        "bottom": 20
     },
-    "headerTemplate": null,
-    "footerTemplate": "_TITLE_ _SECTION_"
+    "headerTemplate": "_SECTION_",
+    "footerTemplate": "_TITLE_"
+  },
+  "styles": {
+    "pdf": "styles/pdf.css"
   }
 }

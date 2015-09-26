@@ -1,0 +1,5 @@
+table {page-break-inside: avoid;}
+table th, table td {
+  padding: 4px !important;
+}
+

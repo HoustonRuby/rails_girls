@@ -37,11 +37,11 @@ That's because our actions don't know to do anything different yet with the auth
 
 We can line up our author routes as before:
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /:author/chirps(.:format) | **chirps#index** | Show a list of all chirps by author | `Chirp.where(author: 'some author')` |
-| /:author/chirps/new(.:format) | **chirps#new** | Show a form for a new chirp with the author filled out | `Chirp.new(author: 'some author')` |
-| /:author/chirps/:id/edit(.:format) | **chirps#edit** | Show a form for editing an existing chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
-| /:author/chirps/:id(.:format) | **chirps#show** | Show a chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
+| /:author/chirps | **chirps#index** | Show a list of all chirps by author | `Chirp.where(author: 'some author')` |
+| /:author/chirps/new | **chirps#new** | Show a form for a new chirp with the author filled out | `Chirp.new(author: 'some author')` |
+| /:author/chirps/:id/edit | **chirps#edit** | Show a form for editing an existing chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
+| /:author/chirps/:id | **chirps#show** | Show a chirp from an author | `Chirp.find_by(author: 'some author', id: 'id')` |
 
 Let's try listing all chirps by one author!

@@ -1,8 +1,8 @@
 # Deleting a chirp
 
-| Verb | URI Pattern | Controller#Action | What should it do? | Example action code |
+| Verb | URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- | -- |
-| DELETE | /chirps/:id(.:format) | chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
+| DELETE | /chirps/:id | chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
 
 As you may have guessed, deleting will happen in the **chirps#destroy** action.  Let's add the action to our `app/controllers/chirps_controller.rb`:
 

@@ -39,16 +39,16 @@ We should see:
 
 We can match up what we saw from `rake routes` with what we did previously in the console:
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /chirps(.:format) | **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
-| /chirps(.:format) | chirps#create | Create a new chirp that get's saved | `Chirp.create(body: 'a body', author: 'some author')` |
-| /chirps/new(.:format) | **chirps#new** | Show a form on a page for someone to fill out a new chirp | `Chirp.new` |
-| /chirps/:id/edit(.:format) | **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
-| /chirps/:id(.:format) | **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
-| /chirps/:id(.:format) | chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
-| /chirps/:id(.:format) | chirps#update | *same as previous* | `Chirp.find(id).update(body: 'a body')` |
-| /chirps/:id(.:format) | chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
+| /chirps | **chirps#index** | Show a list of all the chirps on the page | `Chirp.all` |
+| /chirps | chirps#create | Create a new chirp that get's saved | `Chirp.create(body: 'a body', author: 'some author')` |
+| /chirps/new | **chirps#new** | Show a form on a page for someone to fill out a new chirp | `Chirp.new` |
+| /chirps/:id/edit | **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
+| /chirps/:id | **chirps#show** | Show an existing chirp |  `Chirp.find(id)` |
+| /chirps/:id | chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
+| /chirps/:id | chirps#update | *same as previous* | `Chirp.find(id).update(body: 'a body')` |
+| /chirps/:id | chirps#destroy | delete a specific chirp | `Chirp.find(id).destroy` |
 
 
 The bolded terms in the table above are the pages we will start with.

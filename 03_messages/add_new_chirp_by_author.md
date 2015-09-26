@@ -1,8 +1,8 @@
 # Add new chirp by author
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /:author/chirps/new(.:format) | **chirps#new** | Show a form for a new chirp with the author filled out | `Chirp.new(author: 'some author')` |
+| /:author/chirps/new | **chirps#new** | Show a form for a new chirp with the author filled out | `Chirp.new(author: 'some author')` |
 
 One way to change the code for the **chirps#new** action in `app/controllers/chirps_controller.rb` is to write it like this:
 

@@ -2,10 +2,10 @@
 
 What if we want to edit a chirp?
 
-| URI Pattern | Controller#Action | What should it do? | Example action code |
+| URI Pattern | Controller #Action | What-should-it-do? | Example action code |
 | -- | -- | -- | -- |
-| /chirps/:id/edit(.:format) | **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
-| /chirps/:id(.:format) | chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
+| /chirps/:id/edit | **chirps#edit** | Show a form for editing an existing chirp | `Chirp.find(id)` |
+| /chirps/:id | chirps#update | Update a specific chirp based based on input from the form  | `Chirp.find(id).update(body: 'a body')` |
 
 As with showing a specific chirp, our editing form needs to get the information for a specific Chirp.  We can tell our **chirps#edit** action to do the same thing as our **chirps#show** action by adding this line to the `edit` action:
 

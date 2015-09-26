@@ -37,6 +37,6 @@ In Windows, the command prompt is a greater than sign, >.  For this guide, we wi
 
 
 ## Chrome
-*This is where we get to look at our site as we are building it!*
+*This is where we get to look at our site as we are building it!*  This is one of the preferred browsers for web development.
 
-![](../images/chrome.png)
+> Why?  Discuss with your coach why Chrome or Firefox are preferred.
