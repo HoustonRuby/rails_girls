@@ -46,7 +46,7 @@ Let's try the following:
 
 ```rb
 > first_chirp.body
-> first_chirp.create_at
+> first_chirp.created_at
 > first_chirp.id
 ```
 
