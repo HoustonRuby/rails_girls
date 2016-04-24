@@ -29,6 +29,6 @@ Now we can add bootstrap styles in our app/assets/stylesheets/application.css fi
 @import "bootstrap";
 ```
 
-We can take a look at the changes to 
+Let's see what has changed! We can take a look at the changes to our project here: [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new)
 
 > This would be a great time to discuss `bootstrap` and `sass`  with your coach. 
