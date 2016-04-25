@@ -7,6 +7,8 @@ We are going to need some outside help for this one! In order to chirp our lates
 Let's add the `gem` "bootstrap" to our project. First, we need to open our `Gemfile` and add to the bottom:
 
 ```rails
+gem 'sprockets', '~> 3.0'
+gem 'bootstrap-sass', '~> 3.3.1'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 ```
 Save the file and then type in the command line:
@@ -26,6 +28,7 @@ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scs
 Now we can add bootstrap styles in our app/assets/stylesheets/application.css file:
 
 ```
+@import "bootstrap-sprockets";
 @import "bootstrap";
 ```
 
