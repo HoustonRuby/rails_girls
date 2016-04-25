@@ -14,7 +14,7 @@ We can see that Bootstrap has already put together a navbar we can use. We can t
 
 Let's use their default navbar:
 
-```
+```html
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -82,5 +82,37 @@ Now we can go to any of our pages, and we should be able to see our navbar at th
 
 Let's customize it! We can change
 
-`<a class="navbar-brand" href="#">Brand</a>` to 
-`<a class="navbar-brand" href="/">Chirper</a>`
+```html
+<a class="navbar-brand" href="#">Brand</a>``` to 
+
+```html
+<a class="navbar-brand" href="/">Chirper</a>```
+
+Let's make a link to add a chirp:
+
+```html
+<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>``` to
+
+```html
+<li class="active"><a href="chirps/new">Make a Chirp<span class="sr-only">(current)</span></a></li>```
+
+We can also add a link to all our chirps by changing the next line
+```html
+<li><a href="#">Link</a></li>``` to
+
+````html
+<li><a href="/chirps">Read a Chirp</a></li>```
+
+Now when we go to [http://localhost:3000/](http://localhost:3000/) we should see
+
+img.jpg
+
+In the future, we may want to add a way to sign up and manage an account.
+
+Let's change **Link** to **Sign Up** and **Dropdown** to **Login**.
+```html
+<li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>```
+
+
