@@ -72,7 +72,15 @@ Let's use their default navbar:
 
 We have a special file in views that lets us add html that changes all our pages. Let's paste that html after our `<body>` tag in `app/views/layouts/application.html.erb`.
 
+![http://imgur.com/gJvKEZE](http://imgur.com/gJvKEZE)
 
+Now we can go to any of our pages, and we should be able to see our navbar at the top of the screen. Check it out:
 
+[http://localhost:3000/](http://localhost:3000/)
 
+[http://localhost:3000/chirps/new](http://localhost:3000/chirps/new)
 
+Let's customize it! We can change
+
+`<a class="navbar-brand" href="#">Brand</a>` to 
+`<a class="navbar-brand" href="/">Chirper</a>`
