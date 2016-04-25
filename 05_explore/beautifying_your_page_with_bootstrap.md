@@ -115,4 +115,32 @@ Let's change **Link** to **Sign Up** and **Dropdown** to **Login**.
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>```
 
+Since we're not using it, let's delete the first dropdown. We can remove this block of html, and our navbar will still work.
+
+```html
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">One more separated link</a></li>```
+    
+Let's go to `app/assets/stylesheets/application.css.scss` and add
+
+```css
+  body {
+   background-color: #7bb9d0;
+ }
+```
+under our import statements
+ 
+css.jpg
+
+Now when we go to our page, we will see the background color has changed!
+
+Experiment with different number values. Talk to your coach about...
 
