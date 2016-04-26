@@ -25,7 +25,7 @@ Section 6/What else can we do is where all the fun stuff is (like making things 
 
 ## To contribute,
 
-if you are a coach, we'd like to add you to the Team and collaborators of this repo!  Please email Amanda you haven't been invited to the repo and would like to contribute =).
+if you are a coach, we'd like to add you to the Team and collaborators of this repo!  Please email Amanda if you haven't been invited to the repo and would like to contribute =).
 
 * Clone & branch.
   * Fork if not yet a member.
