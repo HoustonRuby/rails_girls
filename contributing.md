@@ -27,20 +27,39 @@ Section 6/What else can we do is where all the fun stuff is (like making things 
 
 if you are a coach, we'd like to add you to the Team and collaborators of this repo!  Please email Amanda you haven't been invited to the repo and would like to contribute =).
 
-* Download [Gitbook](https://www.gitbook.io/) editor if you do not have it.
 * Clone & branch.
-* Open repo using Gitbook.
-  * Edit it and see the markdown live preview =).
-  * Can also be edited using anything else
+  * Fork if not yet a member.
+* Edit and preview your changes by using your [favorite text-editor](#editing-with-your-favorite-text-editor-and-npmcommand-line), or with the [Gitbook editor](#editing-in-gitbook-editor).
 * Submit pull request with description of what was added.  If there is a pre-formed issue about it, please tag the issue.
 * Update [app](https://github.com/pandafulmanda/chirper) accordingly.
 
 
+### Editing with your favorite text editor and npm/command-line
+
+* Run `npm install` within the project folder.
+* View the book as you edit by running:
+  * `npm run dev`
+    * If you need to change the port, or the live-reload port, you can pass in options like so:
+    * `npm run dev -- --lrport=35730 --port=4001`
+  * As you make changes, this preview will reload!
+  * The script uses [`gitbook-cli`](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md) underneath.
+* Things to note:
+  * To edit things in the table of contents
+    * Update [./SUMMARY.md](https://github.com/HoustonRuby/rails_girls/blob/master/SUMMARY.md)
+  * Images should go in the [./images](https://github.com/HoustonRuby/rails_girls/tree/master/images) directory.
+
+
+### Editing in Gitbook editor
+
+* Download the [Gitbook](https://www.gitbook.com/editor) editor.
+* Open repo using Gitbook.
+  * Edit it and see the markdown live preview =).
+
 ## Other todos include
 
 - [x] Complete (draft of) section 3.1 about messages [#12](/../../issues/12)
-- [ ] Complete (draft of) section 3.2 on showing messages by author [#13](/../../issues/13)
-- [ ] Downgrade app from Rails 4.2.0.beta2 to stable  [#7](/../../issues/7)
+- [x] Complete (draft of) section 3.2 on showing messages by author [#13](/../../issues/13)
+- [ ] Upgrade app from Rails 4.2.0.beta2 to stable  [#7](/../../issues/7)
 - [ ] Re-do screenshots all the way through cleanly [#8](/../../issues/8)
   - [ ] If there is time, redo app repo and tag it cleanly as well.
 - [ ] Test through guide, revise as needed [#9](/../../issues/9)
@@ -61,6 +80,6 @@ if you are a coach, we'd like to add you to the Team and collaborators of this r
 ## Tips
 
 To make a single window screenshot on a Mac,
-* press cmd + shift + 4,
-* press space, and finally
+* press <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>,
+* press <kbd>space</kbd>, and finally
 * click on the window you'd like to capture.
