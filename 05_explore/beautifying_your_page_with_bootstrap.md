@@ -215,7 +215,7 @@ Our chirp background box will create a box around our chirps, and the chirp box 
    border-radius: .5em;
  }
  ```
-Now that we have our elements centered and a background, we can style the inner box displaying our chirps. We will add
+Now that we have our elements centered and a background, we can style the inner box displaying our chirps. We can add
 
 ```css
  div .chirpBox {
@@ -230,5 +230,5 @@ Now that we have our elements centered and a background, we can style the inner 
 
 
 
-Experiment with different fonts and applying them to other parts of your page. Talk to your coach about bootstrap components and how to include them.
+> Experiment with different fonts and applying them to other parts of your page. Talk to your coach about bootstrap components and how to include them.
 
