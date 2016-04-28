@@ -138,7 +138,7 @@ Let's go to `app/assets/stylesheets/application.css.scss` and add
 ```
 under our import statements
  
-css.jpg
+rename_stylesheet.png
 
 Now when we go to our page, we will see the background color has changed!
 
