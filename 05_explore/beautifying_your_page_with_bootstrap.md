@@ -164,34 +164,47 @@ Now we just need to define where we will be using Raleway. Let's return to to `a
 
 Now when we reload `http://localhost:3000`, our font will have changed.
 
-Right now, if we go to `http://localhost:3000/chirps` our chirps are aligned to the left of our page. Let's get them in the center. We will go to `app/views/chirps/index.html.erb` and add some div classes we can style and include some html elements. Let's change the file to this:
+Right now, if we go to `http://localhost:3000/chirps` our chirps are aligned to the left of our page. Let's get them in the center.
+
+We can go to `app/views/layouts/application.html.erb` and add
 
 ```html
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6">
-    <div class="chirpBackgroundBox">
-      <h1>All Chirps</h1>
-      <% @chirps.each do |chirp| %>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="chirpBox">
-              <p><%= chirp.body %></p>
-              <%= image_tag chirp.pic.url, width: '100' %>
-              <p class="pull-right">
-                - <i><%= link_to chirp.author, author_chirps_path(chirp.author) %></i>
-              </p>
-              <br>
-              <p class="pull-right">
-                <%= link_to "Read more", chirp_path(chirp) %>
-              </p>
-            </div>
-          </div>
-        </div>
-      <% end -%>
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <%= yield %>
     </div>
   </div>
-</div>```
+```
+at the end of the page after the `/nav` tag.
+
+html_center_elements.png
+
+Now when we reload `http://localhost:3000` we can see that the pages elements are in a container in the middle of the page.
+ 
+Next, we can go to `app/views/chirps/index.html.erb` and add some div classes we can style and include some html elements. Let's change the file to this:
+
+```html
+<div class="chirpBackgroundBox">
+  <h1>All Chirps</h1>
+  <% @chirps.each do |chirp| %>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="chirpBox">
+          <p><%= chirp.body %></p>
+          <%= image_tag chirp.pic.url, width: '100' %>
+          <p class="pull-right">
+            - <i><%= link_to chirp.author, author_chirps_path(chirp.author) %></i>
+          </p>
+          <br>
+          <p class="pull-right">
+            <%= link_to "Read more", chirp_path(chirp) %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end -%>
+</div>
+```
 
 Our chirp background box will create a box around our chirps, and the chirp box will style each chirp. Now, we can go to application.css.scss and add
 
