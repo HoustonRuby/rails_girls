@@ -142,5 +142,27 @@ rename_stylesheet.png
 
 Now when we go to our page, we will see the background color has changed!
 
-Experiment with different number values. Talk to your coach about...
+We can also change our page's font. We can use Google Fonts API to source fonts that are freely available on the web. Check them out here:
+
+[https://www.google.com/fonts](https://www.google.com/fonts)
+
+Let's use Raleway to test it out. We can add this line of html to `app/views/layouts/application.html.erb` in the head of our file:
+
+```html
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">```
+
+image_of_the_erb_file
+
+Now we just need to define where we will be using Raleway. Let's return to to `app/assets/stylesheets/application.css.scss` and include a font specification for the body of our page:
+
+```css
+  body {
+   font: 150% 'Raleway', serif;
+   background-color: #7bb9d0;
+ }
+```
+
+Now when we reload `http://localhost:3000`, our font will have changed.
+
+Experiment with different fonts and applying them to other parts of your page. Talk to your coach about bootstrap components and how to include them.
 
