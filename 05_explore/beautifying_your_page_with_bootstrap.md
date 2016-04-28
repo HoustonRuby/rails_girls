@@ -164,5 +164,58 @@ Now we just need to define where we will be using Raleway. Let's return to to `a
 
 Now when we reload `http://localhost:3000`, our font will have changed.
 
+Right now, if we go to `http://localhost:3000/chirps` our chirps are aligned to the left of our page. Let's get them in the center. We will go to `app/views/chirps/index.html.erb` and add some div classes we can style and include some html elements. Let's change the file to this:
+
+```html
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="chirpBackgroundBox">
+      <h1>All Chirps</h1>
+      <% @chirps.each do |chirp| %>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="chirpBox">
+              <p><%= chirp.body %></p>
+              <%= image_tag chirp.pic.url, width: '100' %>
+              <p class="pull-right">
+                - <i><%= link_to chirp.author, author_chirps_path(chirp.author) %></i>
+              </p>
+              <br>
+              <p class="pull-right">
+                <%= link_to "Read more", chirp_path(chirp) %>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end -%>
+    </div>
+  </div>
+</div>```
+
+Our chirp background box will create a box around our chirps, and the chirp box will style each chirp. Now, we can go to application.css.scss and add
+
+```css
+ div .chirpBackgroundBox {
+   background-color: #e3e3e3;
+   padding: 1em;
+   border-radius: .5em;
+ }
+ ```
+Now that we have our elements centered and a background, we can style the inner box displaying our chirps. We will add
+
+```css
+ div .chirpBox {
+   font: 300%;
+   margin: .75em;
+   padding: 1.5em;
+   background-color: #ededed;
+   border-radius: .25em;
+ }
+ ```
+ 
+
+
+
 Experiment with different fonts and applying them to other parts of your page. Talk to your coach about bootstrap components and how to include them.
 
