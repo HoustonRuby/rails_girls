@@ -73,6 +73,7 @@ Let's use their default navbar:
 We have a special file in views that lets us add html that changes all our pages. Let's paste that html after our `<body>` tag in `app/views/layouts/application.html.erb`.
 
 ![](../images/navbar_html.png)
+![](../images/html_center_elements.png)
 
 Now we can go to any of our pages, and we should be able to see our navbar at the top of the screen. Check it out:
 
@@ -226,8 +227,7 @@ Now that we have our elements centered and a background, we can style the inner 
    border-radius: .25em;
  }
  ```
- 
-
+ https://getbootstrap.com/css/#forms
 
 
 > Experiment with different fonts and applying them to other parts of your page. Talk to your coach about bootstrap components and how to include them.
