@@ -27,7 +27,7 @@ If we go to [http://localhost:3000/chirps](http://localhost:3000/chirps), we'll 
 
 ![](../images/chrome_error_rake_db_chirps.png)
 
-We've seen this before! In Chapter 4 we fixed this by typing:
+We've seen this before! In Chapter 3 we fixed this by typing:
 
 ```bash
 $ rake db:migrate
