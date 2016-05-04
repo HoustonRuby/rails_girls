@@ -72,8 +72,7 @@ Let's use their default navbar:
 
 We have a special file in views that lets us add html that changes all our pages. Let's paste that html after our `<body>` tag in `app/views/layouts/application.html.erb`.
 
-![](../images/navbar_html.png)
-![](../images/html_center_elements.png)
+![](../images/html_navbar.png)
 
 Now we can go to any of our pages, and we should be able to see our navbar at the top of the screen. Check it out:
 
@@ -84,7 +83,7 @@ Now we can go to any of our pages, and we should be able to see our navbar at th
 Let's customize it! We can change
 
 ```html
-<a class="navbar-brand" href="#">Brand</a>``` to 
+<a class="navbar-brand" href="#">Brand</a>``` to
 
 ```html
 <a class="navbar-brand" href="/">Chirper</a>```
@@ -106,7 +105,7 @@ We can also add a link to all our chirps by changing the next line
 
 Now when we go to [http://localhost:3000/](http://localhost:3000/) we should see
 
-img.jpg
+![](../images/bootstrap_navbar.png)
 
 In the future, we may want to add a way to sign up and manage an account.
 
@@ -129,7 +128,7 @@ Since we're not using it, let's delete the first dropdown. We can remove this bl
     <li><a href="#">Separated link</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="#">One more separated link</a></li>```
-    
+
 Let's go to `app/assets/stylesheets/application.css.scss` and add
 
 ```css
@@ -138,12 +137,12 @@ Let's go to `app/assets/stylesheets/application.css.scss` and add
  }
 ```
 under our import statements
- 
-rename_stylesheet.png
 
 Now when we go to our page, we will see the background color has changed!
 
-We can also change our page's font. We can use Google Fonts API to source fonts that are freely available on the web. Check them out here:
+![](../images/bootstrap_background_color.png)
+
+We can also change our page's font. We can use the Google Fonts API to source fonts that are freely available on the web. Check them out here:
 
 [https://www.google.com/fonts](https://www.google.com/fonts)
 
@@ -152,7 +151,7 @@ Let's use Raleway to test it out. We can add this line of html to `app/views/lay
 ```html
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">```
 
-image_of_the_erb_file
+![](../images/css_add_google_fonts.png)
 
 Now we just need to define where we will be using Raleway. Let's return to to `app/assets/stylesheets/application.css.scss` and include a font specification for the body of our page:
 
@@ -163,7 +162,7 @@ Now we just need to define where we will be using Raleway. Let's return to to `a
  }
 ```
 
-Now when we reload `http://localhost:3000`, our font will have changed.
+We can reload `http://localhost:3000` to view how our font has changed.
 
 Right now, if we go to `http://localhost:3000/chirps` our chirps are aligned to the left of our page. Let's get them in the center.
 
@@ -178,10 +177,10 @@ We can go to `app/views/layouts/application.html.erb` and add
 ```
 at the end of the page after the `/nav` tag.
 
-html_center_elements.png
+![](../images/html_center_elements.png)
 
-Now when we reload `http://localhost:3000` we can see that the pages elements are in a container in the middle of the page.
- 
+Now when we reload `http://localhost:3000/chirps` we can see that the pages elements are in a container in the middle of the page. Because we changed our application.html.erb file, all of our pages will have these changes applied.
+
 Next, we can go to `app/views/chirps/index.html.erb` and add some div classes we can style and include some html elements. Let's change the file to this:
 
 ```html
@@ -193,11 +192,11 @@ Next, we can go to `app/views/chirps/index.html.erb` and add some div classes we
         <div class="chirpBox">
           <p><%= chirp.body %></p>
           <%= image_tag chirp.pic.url, width: '100' %>
-          <p class="pull-right">
+          <p class="text-left">
             - <i><%= link_to chirp.author, author_chirps_path(chirp.author) %></i>
           </p>
           <br>
-          <p class="pull-right">
+          <p class="text-right">
             <%= link_to "Read more", chirp_path(chirp) %>
           </p>
         </div>
@@ -206,6 +205,8 @@ Next, we can go to `app/views/chirps/index.html.erb` and add some div classes we
   <% end -%>
 </div>
 ```
+
+`text-left` and `text-right` are typography classes we can give to text to align it.
 
 Our chirp background box will create a box around our chirps, and the chirp box will style each chirp. Now, we can go to application.css.scss and add
 
@@ -216,6 +217,10 @@ Our chirp background box will create a box around our chirps, and the chirp box 
    border-radius: .5em;
  }
  ```
+
+![](../images/css.png)
+
+
 Now that we have our elements centered and a background, we can style the inner box displaying our chirps. We can add
 
 ```css
@@ -227,8 +232,7 @@ Now that we have our elements centered and a background, we can style the inner 
    border-radius: .25em;
  }
  ```
- https://getbootstrap.com/css/#forms
+![](../images/bootstrap_chirpBox.png)
 
 
-> Experiment with different fonts and applying them to other parts of your page. Talk to your coach about bootstrap components and how to include them.
-
+> Experiment with different fonts and applying them to other parts of your page. Talk to your coach about `<%= yield %>`, bootstrap components, and how to include them.

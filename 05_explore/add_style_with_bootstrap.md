@@ -17,6 +17,9 @@ gem 'sprockets', '~> 3.0'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 ```
+
+![](../images/bootstrap_gems.png)
+
 Save the file and then type in the command line:
 
 ```bash
@@ -38,6 +41,10 @@ Now we can add bootstrap styles in our app/assets/stylesheets/application.css fi
 @import "bootstrap";
 ```
 
+![](../images/bootstrap_imports.png)
+
 Let's see what has changed! We can take a look at the changes to our project here: [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new)
 
-> This would be a great time to discuss `bootstrap` and `sass`  with your coach. 
+![](../images/bootstrap_working_new_chirps.png)
+
+> This would be a great time to discuss `bootstrap` and `sass`  with your coach.
