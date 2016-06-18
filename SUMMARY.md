@@ -30,6 +30,7 @@
    * [Putting your site online](05_explore/putting_your_site_online.md)
    * [Add style with Bootstrap](05_explore/style_your_app/00_add_style_with_bootstrap.md)
      * [Let's change how Chirper looks](05_explore/style_your_app/01_lets_change_how_chirper_looks.md)
+   * [Chirper users!](05_explore/make_authors_into_users.md)
 * [Appendix](06_appendix/README.md)
    * [Installation](06_appendix/installation/README.md)
        * [Nitrous.io](06_appendix/installation/nitrousio.md)
