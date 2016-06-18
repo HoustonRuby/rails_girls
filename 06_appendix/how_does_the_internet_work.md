@@ -4,7 +4,7 @@ Whenever you go to watch a video on Youtube, check your wall on Facebook, run a 
 
 ## A simple example ##
 
-Open your browser, and go to http://www.example.com](http://www.example.com).
+Open your browser, and go to [http://www.example.com](http://www.example.com).
 
 You should see a simple page which looks like this:
 
