@@ -4,7 +4,8 @@
   "description": "rails girls houston gitbook, october 014",
   "main": "SUMMARY.MD",
   "scripts": {
-    "dev": "gitbook serve"
+    "dev": "gitbook serve",
+    "build": "git checkout deploy; git merge master; gitbook build; git add _book; git commit -m 'build latest and update'; git push origin deploy; git subtree push --prefix _book origin gh-pages;"
   },
   "dependencies": {
     "gitbook-plugin-anchors": "~0.3.0",
