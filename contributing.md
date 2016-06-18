@@ -11,7 +11,7 @@ Tone so far has been using first person (we, let's, etc...) as much as possible.
 
 ## The app
 
-is at [this app repo](https://github.com/pandafulmanda/chirper), currently.  Each section is being tagged at each step as much as possible.
+is at [this app repo](https://github.com/HoustonRuby/chirper), currently.  Each section is being tagged at each step as much as possible.
 
 The base app is a single model CRUD app called Chirper that is an imitation of Twitter.  It is barebones, and does not, for example, use a CSS framework immediately.
 
@@ -31,7 +31,7 @@ if you are a coach, we'd like to add you to the Team and collaborators of this r
   * Fork if not yet a member.
 * Edit and preview your changes by using your [favorite text-editor](#editing-with-your-favorite-text-editor-and-npmcommand-line), or with the [Gitbook editor](#editing-in-gitbook-editor).
 * Submit pull request with description of what was added.  If there is a pre-formed issue about it, please tag the issue.
-* Update [app](https://github.com/pandafulmanda/chirper) accordingly.
+* Update [app](https://github.com/HoustonRuby/chirper) accordingly.
 
 
 ### Editing with your favorite text editor and npm/command-line
