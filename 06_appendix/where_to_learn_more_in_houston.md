@@ -41,7 +41,7 @@ A group for learning to program together.
 
 # Paid and career oriented
 
-### [The Iron Yard](Immersive Full-time)
+### [The Iron Yard, an immersive full-time "bootcamp"](https://www.theironyard.com/locations/houston.html)
 Their programs train high quality developers who will help businesses across the ecosystem build amazing digital products.
 
 
