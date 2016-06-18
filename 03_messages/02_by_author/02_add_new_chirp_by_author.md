@@ -16,12 +16,12 @@ One way to change the code for the **chirps#new** action in `app/controllers/chi
   end
 ```
 
-![](../images/sublime_new_chirp_by_author_if_else.png)
+![](../../images/sublime_new_chirp_by_author_if_else.png)
 
 
 We can see that this works when we go to [http://localhost:3000/Big Bird/chirps/new](http://localhost:3000/Big%20Bird/chirps/new):
 
-![](../images/chrome_new_chirp_by_author.png)
+![](../../images/chrome_new_chirp_by_author.png)
 
 But as before, we know we can do better:
 
@@ -31,7 +31,7 @@ But as before, we know we can do better:
   end
 ```
 
-![](../images/sublime_new_chirp_by_author.png)
+![](../../images/sublime_new_chirp_by_author.png)
 
 Try chirping as Big Bird!
 

@@ -14,24 +14,24 @@ In our `config/routes.rb`, let's put the following after `resources :chirps`:
   end
 ```
 
-![](../images/sublime_route_scope.png)
+![](../../images/sublime_route_scope.png)
 
 If we look at the routes for this using `rake routes` in our commandline, we will get:
 
-![](../images/terminal_route_scope.png)
+![](../../images/terminal_route_scope.png)
 
 The ones starting with `:author` are the ones we just made!  Let's skip **creating**, **updating**, and **destroying** chirps by adding `, except: ['create', 'update', 'destroy']` to what we just coded like so:
 
-![](../images/sublime_route_scope_except.png)
+![](../../images/sublime_route_scope_except.png)
 
 Now, if we `rake routes` again, we get:
 
-![](../images/terminal_route_scope_except.png)
+![](../../images/terminal_route_scope_except.png)
 
 
 As with `:id` before, we will now get the `:author` value in our controllers through the route. If we go to [http://localhost:3000/Big Bird/chirps](http://localhost:3000/Big%20Bird/chirps) right now, we still all chirps.
 
-![](../images/chrome_chirps_author_still_all.png)
+![](../../images/chrome_chirps_author_still_all.png)
 
 That's because our actions don't know to do anything different yet with the author.
 

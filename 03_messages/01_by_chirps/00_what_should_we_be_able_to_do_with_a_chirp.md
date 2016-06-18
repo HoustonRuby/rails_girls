@@ -15,7 +15,7 @@ $ rails console
 
 We should see:
 
-![](../images/terminal_rails_console.png)
+![](../../images/terminal_rails_console.png)
 
 The `>` means the *Rails console* is waiting for us to tell it something to do.
 
@@ -27,7 +27,7 @@ Let's try a couple things:
 
 Take note of the highlighted line:
 
-![](../images/terminal_rails_console_chirp_new.png)
+![](../../images/terminal_rails_console_chirp_new.png)
 
 Here, we can see the `body` and `author` properties we told Rails about earlier, along with an `id`, a `created_at`, and a `updated_at`.  These will come in very handy later on.
 
@@ -40,7 +40,7 @@ Next, let's making a new Chirp that has a `body` and an `author`.
 
 This will make a new chirp and also save it to the database.  The `Rails console` nicely tells us that a transaction with the database has happened.
 
-![](../images/terminal_rails_console_newsave.png)
+![](../../images/terminal_rails_console_newsave.png)
 
 Let's try the following:
 
@@ -72,7 +72,7 @@ Let's look at all the chirps we have in our table:
 
 The commandline shows us the updated chirp!
 
-![](../images/terminal_chirp_all.png)
+![](../../images/terminal_chirp_all.png)
 
 
 Let's make some more chirps using a shortcut function that will make a new chirp and save it at once:

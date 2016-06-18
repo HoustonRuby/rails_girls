@@ -12,13 +12,13 @@ We are going to need some outside help for this one! In order to chirp our lates
 
 Let's add the `gem` "bootstrap" to our project. First, we need to open our `Gemfile` and add to the bottom:
 
-```rails
+```ruby
 gem 'sprockets', '~> 3.0'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 ```
 
-![](../images/bootstrap_gems.png)
+![](../../images/bootstrap_gems.png)
 
 Save the file and then type in the command line:
 
@@ -36,15 +36,18 @@ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scs
 ```
 Now we can add bootstrap styles in our app/assets/stylesheets/application.css file:
 
-```
+```css
 @import "bootstrap-sprockets";
 @import "bootstrap";
 ```
 
-![](../images/bootstrap_imports.png)
+![](../../images/bootstrap_imports.png)
 
 Let's see what has changed! We can take a look at the changes to our project here: [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new)
 
-![](../images/bootstrap_working_new_chirps.png)
+![](../../images/bootstrap_working_new_chirps.png)
 
-> This would be a great time to discuss `bootstrap` and `sass`  with your coach.
+> Look at the HTML in the browser with Inspect Element again.  This would be a great time to discuss with your group:
+>   * how are the Bootstrap styles being loaded in?
+>   * `CSS` vs `html`
+>   * `bootstrap` and `sass`

@@ -72,7 +72,7 @@ Let's use their default navbar:
 
 We have a special file in views that lets us add html that changes all our pages. Let's paste that html after our `<body>` tag in `app/views/layouts/application.html.erb`.
 
-![](../images/html_navbar.png)
+![](../../images/html_navbar.png)
 
 Now we can go to any of our pages, and we should be able to see our navbar at the top of the screen. Check it out:
 
@@ -105,7 +105,7 @@ We can also add a link to all our chirps by changing the next line
 
 Now when we go to [http://localhost:3000/](http://localhost:3000/) we should see
 
-![](../images/bootstrap_navbar.png)
+![](../../images/bootstrap_navbar.png)
 
 In the future, we may want to add a way to sign up and manage an account.
 
@@ -140,7 +140,7 @@ under our import statements
 
 Now when we go to our page, we will see the background color has changed!
 
-![](../images/bootstrap_background_color.png)
+![](../../images/bootstrap_background_color.png)
 
 We can also change our page's font. We can use the Google Fonts API to source fonts that are freely available on the web. Check them out here:
 
@@ -151,7 +151,7 @@ Let's use Raleway to test it out. We can add this line of html to `app/views/lay
 ```html
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">```
 
-![](../images/css_add_google_fonts.png)
+![](../../images/css_add_google_fonts.png)
 
 Now we just need to define where we will be using Raleway. Let's return to to `app/assets/stylesheets/application.css.scss` and include a font specification for the body of our page:
 
@@ -177,7 +177,7 @@ We can go to `app/views/layouts/application.html.erb` and add
 ```
 at the end of the page after the `/nav` tag.
 
-![](../images/html_center_elements.png)
+![](../../images/html_center_elements.png)
 
 Now when we reload `http://localhost:3000/chirps` we can see that the pages elements are in a container in the middle of the page. Because we changed our application.html.erb file, all of our pages will have these changes applied.
 
@@ -218,7 +218,7 @@ Our chirp background box will create a box around our chirps, and the chirp box 
  }
  ```
 
-![](../images/css.png)
+![](../../images/css.png)
 
 
 Now that we have our elements centered and a background, we can style the inner box displaying our chirps. We can add
@@ -232,7 +232,7 @@ Now that we have our elements centered and a background, we can style the inner 
    border-radius: .25em;
  }
  ```
-![](../images/bootstrap_chirpBox.png)
+![](../../images/bootstrap_chirpBox.png)
 
 
 > Experiment with different fonts and applying them to other parts of your page. Talk to your coach about `<%= yield %>`, bootstrap components, and how to include them.

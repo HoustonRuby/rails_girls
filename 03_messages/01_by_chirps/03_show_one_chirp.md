@@ -9,7 +9,7 @@ In the `show` action/function in  `app/controllers/chirps_controller.rb`, let's 
 ```rb
   @chirp = Chirp.find(params[:id])
 ```
-![](../images/sublime_controller_show.png)
+![](../../images/sublime_controller_show.png)
 
 
 In the corresponding view --`app/views/chirps/show.html.erb`, put this in:
@@ -34,7 +34,7 @@ It would be nice to able to see an individual Chirp by clicking on a link from t
 ```
 right before the `<% end -%>` of the loop so that `app/views/chirps/index.html.erb` looks like this:
 
-![](../images/sublime_link_to.png)
+![](../../images/sublime_link_to.png)
 
 Going to [http://localhost:3000/chirps](http://localhost:3000/chirps) now should show all the Chirps, each with a link to "Read More" underneath.  Clicking on each link will bring us to a new page with the specific Chirp.
 

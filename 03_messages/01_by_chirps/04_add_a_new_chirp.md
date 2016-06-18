@@ -13,7 +13,7 @@ We'll start by making a form on  [http://localhost:3000/chirps/new](http://local
 ```rb
     @chirp = Chirp.new
 ```
-![](../images/sublime_new_chirp_controller.png)
+![](../../images/sublime_new_chirp_controller.png)
 
 And in `app/views/chirps/new.html.erb`, let's make a form:
 
@@ -41,13 +41,13 @@ And in `app/views/chirps/new.html.erb`, let's make a form:
 
 Now, if we go to [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new), we'll see a form for making a new chirp.
 
-![](../images/chrome_new_chirp_form.png)
+![](../../images/chrome_new_chirp_form.png)
 
 Let's try to chirp by filling out the form and pressing "Chirp!"
 
-![](../images/chrome_form_chirp.png)
+![](../../images/chrome_form_chirp.png)
 
-![](../images/chrome_chirp_error.png)
+![](../../images/chrome_chirp_error.png)
 
 > What happened?  Discuss with the coach and look at the code the `form_for` function made for us in our HTML using Inspect Element.
 
@@ -68,11 +68,11 @@ Let's add the following to our `app/controllers/chirps_controller.rb`:
 Our controller should now look like this:
 
 <!-- TODO: update this create to include the else. -->
-![](../images/sublime_controller_create.png)
+![](../../images/sublime_controller_create.png)
 
 Now, when we submit...
 
-![](../images/chrome_made_new.png)
+![](../../images/chrome_made_new.png)
 
 we get redirected to the new chirp.
 
@@ -86,8 +86,8 @@ We can do this by adding to `app/views/chirps/index.html.erb`, just below the he
 <%= link_to "Make a new chirp", new_chirp_path %>
 <hr>
 ```
-![](../images/sublime_all_with_new.png)
+![](../../images/sublime_all_with_new.png)
 
 [http://localhost:3000/chirps](http://localhost:3000/chirps) will now have a link to make new chirps.
 
-![](../images/chrome_all_with_new.png)
+![](../../images/chrome_all_with_new.png)
