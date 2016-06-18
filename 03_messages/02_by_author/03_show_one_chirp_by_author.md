@@ -22,8 +22,8 @@ Let's update the **chirps#show** and **chirps#edit** actions:
   end
 ```
 
-![](../images/sublime_edit_show_by_author.png)
+![](../../images/sublime_edit_show_by_author.png)
 
 We will see the same things as before for showing and editing a chirp.
 
-![](../images/chrome_show_by_author.png)
+![](../../images/chrome_show_by_author.png)

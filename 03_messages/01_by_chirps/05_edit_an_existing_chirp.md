@@ -15,7 +15,7 @@ As with showing a specific chirp, our editing form needs to get the information 
 
 Now, our `app/controllers/chirps_controller.rb` show look like this:
 
-![](../images/sublime_controller_edit.png)
+![](../../images/sublime_controller_edit.png)
 
 And in `app/views/chirps/edit.html.erb`, let's make a form using the existing chirp's information:
 
@@ -43,11 +43,11 @@ And in `app/views/chirps/edit.html.erb`, let's make a form using the existing ch
 
 Now, if we go to the edit page of a chirp, like the one at [http://localhost:3000/chirps/2/edit](http://localhost:3000/chirps/2/edit), we should see something like:
 
-![](../images/chrome_edit.png)
+![](../../images/chrome_edit.png)
 
 When we try to edit and save, we get an error:
 
-![](../images/chrome_update_error.png)
+![](../../images/chrome_update_error.png)
 
 
 We have to make a **chirps#update** action, one that will find the chirp we're trying to edit and update it. We can make this by adding:
@@ -66,7 +66,7 @@ We have to make a **chirps#update** action, one that will find the chirp we're t
 
 Now, when we make a change and update, we'll see:
 
-![](../images/chrome_chirp_updated.png)
+![](../../images/chrome_chirp_updated.png)
 
 Great!  Let's add a link on the show chirp page so we can easily get to the edit page when we want to.  In `app/views/chirps/show.html.erb`, add:
 
@@ -76,6 +76,6 @@ Great!  Let's add a link on the show chirp page so we can easily get to the edit
 
 Now, when showing a Chirp, [http://localhost:3000/chirps/2](http://localhost:3000/chirps/2) has a link for us to edit the chirp.
 
-![](../images/chrome_edit_chirp_link.png)
+![](../../images/chrome_edit_chirp_link.png)
 
 > Review with your coach what we did with editing a chirp.

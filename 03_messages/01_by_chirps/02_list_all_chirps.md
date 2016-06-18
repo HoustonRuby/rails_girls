@@ -13,7 +13,7 @@ In `app/controllers/chirps_controller.rb` in between `def index` and the closet 
 ```
 like so:
 
-![](../images/sublime_all_chirps.png)
+![](../../images/sublime_all_chirps.png)
 
 
 In the corresponding view --`app/views/chirps/index.html.erb`, let's add this line:
@@ -30,7 +30,7 @@ In the corresponding view --`app/views/chirps/index.html.erb`, let's add this li
 
 Now if we go to [http://localhost:3000/chirps](http://localhost:3000/chirps) again, we'll see:
 
-![](../images/chrome_all_chirps.png)
+![](../../images/chrome_all_chirps.png)
 
 Pretty nifty!
 

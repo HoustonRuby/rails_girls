@@ -18,7 +18,7 @@ Notice in the verb column for this route, we have the word `DELETE`.  This is a 
 ```html
 <%= link_to "Delete this Chirp", chirp_path(@chirp), method: 'delete' %>
 ```
-![](../images/sublime_view_chirp_delete.png)
+![](../../images/sublime_view_chirp_delete.png)
 
 
 

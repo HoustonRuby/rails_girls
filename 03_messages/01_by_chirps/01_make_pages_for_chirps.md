@@ -19,7 +19,7 @@ resources :chirps
 
 `config/routes.rb` should now look something like this:
 
-![](../images/sublime_routes_chirps_resource.png)
+![](../../images/sublime_routes_chirps_resource.png)
 
 This is a shortcut to make routes for doing things with a `resource` really quickly.
 
@@ -31,7 +31,7 @@ $ rake routes
 
 We should see:
 
-![](../images/terminal_resources_routes.png)
+![](../../images/terminal_resources_routes.png)
 
 > Let's talk about what routes are and what this idea of a resource is.
 >
@@ -56,7 +56,7 @@ The bolded terms in the table above are the pages we will start with.
 Let's see what happens when we try to go to one of these routes, namely [http://localhost:3000/chirps](http://localhost:3000/chirps).
 
 <!-- TODO: change this out for chirps index -->
-![](../images/chrome_try_chirps_new.png)
+![](../../images/chrome_try_chirps_new.png)
 
 We can tell Rails to make a controller like we did before, with a few extra "`actions`".
 
@@ -66,7 +66,7 @@ $ rails generate controller chirps index new edit show
 
 The terminal should tell you that it's made some files, like last time:
 
-![](../images/terminal_chirps_controller.png)
+![](../../images/terminal_chirps_controller.png)
 
 
 > Why generate the *chirps* controller with actions `index`, `new`, `edit`, and `show`?
@@ -78,8 +78,8 @@ The terminal should tell you that it's made some files, like last time:
 Now, if we try going to [http://localhost:3000/chirps](http://localhost:3000/chirps) again, we should see:
 <!-- TODO: change this out for chirps index -->
 
-![](../images/chrome_try_chirps_new_again.png)
+![](../../images/chrome_try_chirps_new_again.png)
 
 In `app/controllers/chirps_controller.rb`, we see:
 
-![](../images/sublime_controller_chirps_initial.png)
+![](../../images/sublime_controller_chirps_initial.png)

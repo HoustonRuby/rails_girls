@@ -18,7 +18,7 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 ```
 
-![](../images/bootstrap_gems.png)
+![](../../images/bootstrap_gems.png)
 
 Save the file and then type in the command line:
 
@@ -41,11 +41,11 @@ Now we can add bootstrap styles in our app/assets/stylesheets/application.css fi
 @import "bootstrap";
 ```
 
-![](../images/bootstrap_imports.png)
+![](../../images/bootstrap_imports.png)
 
 Let's see what has changed! We can take a look at the changes to our project here: [http://localhost:3000/chirps/new](http://localhost:3000/chirps/new)
 
-![](../images/bootstrap_working_new_chirps.png)
+![](../../images/bootstrap_working_new_chirps.png)
 
 > Look at the HTML in the browser with Inspect Element again.  This would be a great time to discuss with your group:
 >   * how are the Bootstrap styles being loaded in?
