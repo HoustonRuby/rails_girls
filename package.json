@@ -4,7 +4,8 @@
   "description": "rails girls houston gitbook, october 014",
   "main": "SUMMARY.MD",
   "scripts": {
-    "dev": "gitbook serve"
+    "dev": "gitbook serve",
+    "build": "gitbook build"
   },
   "dependencies": {
     "gitbook-plugin-anchors": "~0.3.0",
