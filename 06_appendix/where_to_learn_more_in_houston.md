@@ -33,12 +33,6 @@ A non-profit that provides affordable and accessible programs to women who want 
 
 A meet up about all things Javascript.
 
-### [Programmers Crew](http://www.meetup.com/Programmers-crew/)
-
-A group for learning to program together.
-
-
-
 # Paid and career oriented
 
 ### [The Iron Yard, an immersive full-time "bootcamp"](https://www.theironyard.com/locations/houston.html)

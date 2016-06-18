@@ -1,0 +1,46 @@
+@page { size: auto;  margin: 0mm; }
+
+[data-mode=cli]:not(.on){
+  display: block !important;
+}
+
+[data-mode]:not([data-mode=cli]){
+  display: none !important;
+}
+
+a[href^="http"]:not([href^="http://localhost:"]):after {
+    content: "[" attr(href) "]" !important;
+    margin-left: 2px !important;
+    font-style: italic !important;
+    color: #4078c0 !important;
+    font-weight: 400;
+}
+
+pre {
+    background: #ededed;
+}
+
+body .page pre {
+    padding: 4px;
+}
+
+body .page pre code {
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+body .page table th, body .page table td{
+    padding: 2px;
+    word-wrap: break-word;
+}
+
+body { 
+    /* this affects the margin on the content before sending to printer */ 
+    margin: 0;
+}
+
+blockquote li {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}

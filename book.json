@@ -1,17 +1,20 @@
 {
   "plugins" : [ "anchors", "richquotes" ],
+  "styles": {
+    "pdf": "./styles/pdf.css"
+  },
   "pdf": {
     "toc": false,
     "pageNumbers": true,
-    "fontSize": 10,
-    "paperSize": "a5",
+    "fontSize": 9,
+    "paperSize": "a6",
     "margin": {
-        "right": 36,
-        "left": 36,
-        "top": 36,
-        "bottom": 36
+      "top": 10,
+      "bottom": 10,
+      "right": 10,
+      "left": 10
     },
-    "headerTemplate": null,
-    "footerTemplate": "_TITLE_ _SECTION_"
+    "headerTemplate": "Rails Girls June 2016",
+    "footerTemplate": "_SECTION_"
   }
 }
